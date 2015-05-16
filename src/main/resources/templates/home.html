@@ -17,7 +17,7 @@
 			</div>
 		</div>
 	</div>
-	<form action="upload" th:action="@{/addFile}" method="post" enctype="multipart/form-data">
+	<form action="upload" th:action="@{/addFileLoggedOn}" method="post" enctype="multipart/form-data">
 		<input type="file" name="myFile"/>
 		<div>
 			<label> Email : <input type="text" name="email"/> </label>
@@ -25,9 +25,5 @@
 			<label th:text="${name}"></label>
 		</div>
 	</form>
-	<!--<div class="container">
-		<div id="created" th:text="${#dates.format(date)}">July 11,
-			2012 2:17:16 PM CDT</div>
-	</div>-->
 </body>
 </html>

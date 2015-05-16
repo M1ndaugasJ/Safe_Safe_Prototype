@@ -98,7 +98,7 @@ public class SampleMethodSecurityApplication extends WebMvcConfigurerAdapter {
 		@Override
 		protected void configure(HttpSecurity http) throws Exception {
 			// @formatter:off
-			http.authorizeRequests().antMatchers("/login").permitAll().anyRequest()
+			http.authorizeRequests().antMatchers("/login", "/addFile").permitAll().anyRequest()
 					.fullyAuthenticated().and().formLogin().loginPage("/login")
 					.failureUrl("/login?error").and().logout()
 					.logoutRequestMatcher(new AntPathRequestMatcher("/logout")).and()

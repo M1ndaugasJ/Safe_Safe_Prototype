@@ -1,5 +1,6 @@
 package sample.ui.method;
 
+import org.apache.commons.validator.routines.EmailValidator;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
@@ -8,7 +9,9 @@ import org.springframework.web.servlet.ModelAndView;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
-import java.io.FileOutputStream;import java.lang.Exception;import java.lang.String;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.lang.Exception;import java.lang.String;
 
 /**
  * Created by Mindaugo on 2015-05-13.
@@ -17,9 +20,38 @@ import java.io.FileOutputStream;import java.lang.Exception;import java.lang.Stri
 public class CustomerDataController {
 
     //@ResponseBody ??
+    private byte[] multipartFile;
+    private String email;
 
     @RequestMapping(value = "/addFile", method = RequestMethod.POST)
-    public String handleFileUpload(@RequestParam("myFile") MultipartFile file, @RequestParam("email") String email, ModelMap model) {
+    public String addFile(@RequestParam("myFile") MultipartFile file, @RequestParam("email") String email, ModelMap model) {
+        if(isFileValid(file)&&isEmailValid(email)){
+            EmailSenderController.generateAndSendEmail(getEmail(), convert(file));
+            model.addAttribute("name", "File has been uploaded and sent.");
+        }
+        return "login";
+    }
+
+    @RequestMapping(value = "/addFile", method = RequestMethod.GET)
+    public ModelAndView login() {
+        return new ModelAndView("login", "command", "name");
+    }
+
+    @RequestMapping(value = "/addFileLoggedOn", method = RequestMethod.POST)
+    public String addFileLoggedOn(@RequestParam("myFile") MultipartFile file, @RequestParam("email") String email, ModelMap model) {
+        if(isFileValid(file)&&isEmailValid(email)){
+            EmailSenderController.generateAndSendEmail(getEmail(), convert(file));
+            model.addAttribute("name", "File has been uploaded and sent.");
+        }
+        return "home";
+    }
+
+    @RequestMapping(value = "/addFileLoggedOn", method = RequestMethod.GET)
+    public ModelAndView home() {
+        return new ModelAndView("home", "command", "name");
+    }
+
+    public boolean isFileValid(MultipartFile file){
         if (!file.isEmpty()) {
             String name = file.getName();
             try {
@@ -27,21 +59,49 @@ public class CustomerDataController {
                 BufferedOutputStream stream = new BufferedOutputStream(new FileOutputStream(new File(name + "-uploaded")));
                 stream.write(bytes);
                 stream.close();
-                model.addAttribute("name", "Uploaded");
-                return "home";
+                setMultipartFile(bytes);
+                return true;
             } catch (Exception e) {
-                model.addAttribute("name", "An exception was catched");
-                return "home";
+                return false;
             }
         } else {
-            model.addAttribute("name", "File you selected is empty");
-            return "home";
+            return false;
         }
     }
 
-    @RequestMapping(value = "/addFile", method = RequestMethod.GET)
-    public ModelAndView home() {
-        return new ModelAndView("home", "command", "name");
+    public boolean isEmailValid(String email){
+        EmailValidator emailValidator = EmailValidator.getInstance();
+        if(emailValidator.isValid(email)){
+            setEmail(email);
+            return true;
+        }
+        return false;
+    }
+
+    public File convert(MultipartFile file)
+    {
+        File convFile = new File(file.getOriginalFilename());
+        try {
+            convFile.createNewFile();
+            FileOutputStream fos = new FileOutputStream(convFile);
+            fos.write(file.getBytes());
+            fos.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return convFile;
+    }
+
+    public void setMultipartFile(byte[] multipartFile) {
+        this.multipartFile = multipartFile;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
 }
