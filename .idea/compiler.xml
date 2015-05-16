@@ -22,10 +22,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="SafeSafePrototype" />
         <module name="spring-boot-sample-web-method-security" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="SafeSafePrototype" target="1.8" />
       <module name="spring-boot-sample-web-method-security" target="1.8" />
     </bytecodeTargetLevel>
   </component>
