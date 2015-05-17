@@ -1,4 +1,4 @@
-package sample.ui.models;
+package sample.ui.Model;
 
 /**
  * Created by Edvinas on 2015-05-17.

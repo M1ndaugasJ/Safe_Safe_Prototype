@@ -1,4 +1,4 @@
-package sample.ui.models;
+package sample.ui.Model;
 
 import java.util.Date;
 import java.util.List;

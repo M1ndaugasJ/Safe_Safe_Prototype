@@ -1,6 +1,6 @@
-package Facade;
+package sample.ui.Facade;
 
-import Model.User;
+import sample.ui.Model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;

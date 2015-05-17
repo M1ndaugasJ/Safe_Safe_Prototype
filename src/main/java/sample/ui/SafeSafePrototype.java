@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package sample.ui.method;
+package sample.ui;
 
 import java.util.Date;
 import java.util.Map;
@@ -22,7 +22,6 @@ import java.util.Map;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.security.SecurityProperties;
-import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -43,7 +42,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 @EnableAutoConfiguration
 @ComponentScan
 @EnableGlobalMethodSecurity(securedEnabled = true)
-public class SampleMethodSecurityApplication extends WebMvcConfigurerAdapter {
+public class SafeSafePrototype extends WebMvcConfigurerAdapter {
 
 	@Controller
 	protected static class HomeController {
@@ -60,7 +59,7 @@ public class SampleMethodSecurityApplication extends WebMvcConfigurerAdapter {
 	}
 
 	public static void main(String[] args) throws Exception {
-		SpringApplication.run(SampleMethodSecurityApplication.class, args);
+		SpringApplication.run(SafeSafePrototype.class, args);
 	}
 
 	@Override

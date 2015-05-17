@@ -1,6 +1,6 @@
-package Facade;
+package sample.ui.Facade;
 
-import Model.User;
+import sample.ui.Model.User;
 import org.springframework.data.repository.CrudRepository;
 
 import javax.transaction.Transactional;

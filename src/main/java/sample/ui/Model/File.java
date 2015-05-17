@@ -1,4 +1,4 @@
-package Model;
+package sample.ui.Model;
 
 import org.hibernate.annotations.CreationTimestamp;
 
