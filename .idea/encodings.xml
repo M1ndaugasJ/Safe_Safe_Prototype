@@ -2,5 +2,11 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/css/bg.jpg" charset="windows-1257" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/css/bootstrap.css" charset="windows-1257" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/css/etalage.css" charset="windows-1257" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/css/form.css" charset="windows-1257" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/css/nav.css" charset="windows-1257" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/css/style.css" charset="windows-1257" />
   </component>
 </project>
