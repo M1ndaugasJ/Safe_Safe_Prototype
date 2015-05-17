@@ -4,38 +4,69 @@
 <title>Login</title>
 <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"
 	href="../../css/bootstrap.min.css" />
+
+	<link href="../../css/style.css"  th:href="@{/css/style.css}" rel="stylesheet" type="text/css" media="all" />
+	<link href="../../css/nav.css"  th:href="@{/css/nav.css}"  rel="stylesheet" type="text/css" media="all"/>
+
 </head>
 <body onload="document.f.username.focus();">
+
+<div class="banner-bg banner-bg1">
 	<div class="container">
-		<div class="navbar">
-			<div class="navbar-inner">
-				<a class="brand" href="http://www.thymeleaf.org"> Safe Safe </a>
+		<div class="header">
+			<div class="logo">
+				 <h1 style="color: #fff">Safe Safe</h1>
+			</div>
+			<div class="top-nav">
+
 				<ul class="nav">
-					<li><a th:href="@{/}" href="home.html"> Home </a></li>
+					<li class="dropdown1"><a  th:href="@{/}" href="home.html">Home</a>
+
+					</li>
+					<li class="dropdown1"><a th:href="@{/logout}" href="logout">Logout</a>
+					</li>
 				</ul>
 			</div>
-		</div>
-		<div class="content">
-			<p th:if="${param.logout}" class="alert">You have been logged out</p>
-			<p th:if="${param.error}" class="alert alert-error">There was an error, please try again</p>
-			<h2>Login with Username and Password</h2>
-			<form name="form" th:action="@{/login}" action="/login" method="POST">
-				<fieldset>
-					<input type="text" name="username" value="" placeholder="Username" />
-					<input type="password" name="password" placeholder="Password" />
-				</fieldset>
-				<input type="submit" id="login" value="Login"
-					class="btn btn-primary" />
-			</form>
-			<form action="upload" th:action="@{/addFile}" method="POST" enctype="multipart/form-data">
-				<input type="file" name="myFile"/>
-				<div>
-					<label> Email : <input type="text" name="email"/> </label>
-					<input type="submit" value="Send" />
-					<label th:text="${name}"></label>
-				</div>
-			</form>
+			<div class="clearfix"></div>
 		</div>
 	</div>
+	<div class="caption">
+		<div class="slider">
+			<div class="callbacks_container">
+				<div class="container">
+
+
+
+
+					<form action="upload" th:action="@{/addFileLoggedOn}" method="post" enctype="multipart/form-data">
+						<input type="file" name="myFile" class="morebtn-file"/>
+						<div>
+							<label><div class="frontend-label"> Email : </div><input type="text" name="email"/> </label>
+							<input type="submit" value="Send" class="morebtn" />
+							<label th:text="${name}"></label>
+						</div>
+					</form>
+				</div>
+
+				<p>We send<span> your</span> files safe <span>and</span> easy <span>everywhere</span></p>
+
+			</div>
+		</div>
+
+		<div style="  max-width: 300px;  background-color: rgba(0, 0, 0, 0.6);  padding: 19px;  border-radius: 11px;">
+			<p th:if="${param.logout}" class="alert">You have been logged out</p>
+			<p th:if="${param.error}" class="alert alert-error">There was an error, please try again</p>
+			<form name="form" th:action="@{/login}" action="/login" method="POST">
+				<fieldset>
+					<input type="text" name="username" value="" placeholder="Username" class="morebtn" />
+					<input type="password" name="password" placeholder="Password" class="morebtn-psw" />
+				</fieldset>
+				<input type="submit" id="login" value="Login"
+					   class="btn btn-primary" />
+			</form> </div>
+
+	</div>
+
+</div>
 </body>
 </html>

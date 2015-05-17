@@ -9,7 +9,7 @@ body{
 	padding:0;
 	background:#fff;
 	font-family: 'Roboto', sans-serif;
- }
+}
 body a{
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
@@ -18,14 +18,14 @@ body a{
 	-ms-transition:0.5s all;
 }
 h1,h2,h3,h4,h5,h6{
-	margin:0;			   
-}	
+	margin:0;
+}
 p{
 	margin:0;
 }
 ul{
-margin:0;
-padding:0;
+	margin:0;
+	padding:0;
 }
 /*----*/
 .banner-bg1{
@@ -70,40 +70,40 @@ a.shop{
 	float:left;
 }
 .logo a {
-  display: inline-block;
+	display: inline-block;
 }
 .top-nav{
 	float:right;
 	margin-top: 0px;
 }
- .slider {
+.slider {
 	position: relative;
 	text-align: center;
 }
 .rslides {
-  position: relative;
-  list-style: none;
-  overflow: hidden;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  }
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
 .rslides h3{
-color:#fff;
-font-size:2.4em;
+	color:#fff;
+	font-size:2.4em;
 }
 .rslides li {
-  -webkit-backface-visibility: hidden;
-  position: absolute;
-  display: none;
-  width: 100%;
-  left: 0;
-  top: 0;
-  }
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
 .rslides li:first-child {
-  position: relative;
-  display: block;
-  float: left;
+	position: relative;
+	display: block;
+	float: left;
 }
 ul.callbacks_tabs.callbacks1_tabs {
 	position: absolute;
@@ -113,26 +113,26 @@ ul.callbacks_tabs.callbacks1_tabs {
 	display:none;
 }
 .callbacks_nav {
-  position: absolute;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  top: 50%;
-  left:20px;
-  opacity: 0.7;
-  z-index: 3;
-  text-indent: -9999px;
-  overflow: hidden;
-  text-decoration: none;
-  height: 69px;
-  width: 77px;
-  background: transparent url("../images/slid.png") no-repeat left top;
-  margin-top: -45px;
-  }
+	position: absolute;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	top: 50%;
+	left:20px;
+	opacity: 0.7;
+	z-index: 3;
+	text-indent: -9999px;
+	overflow: hidden;
+	text-decoration: none;
+	height: 69px;
+	width: 77px;
+	background: transparent url("../images/slid.png") no-repeat left top;
+	margin-top: -45px;
+}
 .callbacks_nav.next {
-  left: auto;
-  background-position: right top;
-  right: 25px;
- }
- .caption h1{
+	left: auto;
+	background-position: right top;
+	right: 25px;
+}
+.caption h1{
 	font-size:3.5em;
 	font-weight:500;
 	color:#fff;
@@ -145,7 +145,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 	margin-bottom:1em;
 }
 .caption p span{
-	color:#fcff19;	
+	color:#fcff19;
 }
 a.morebtn{
 	background:#000;
@@ -180,10 +180,29 @@ a.morebtn{
 	-ms-transition:0.5s all ease;
 }
 
+.morebtn-psw{
+	width: 100%;
+	border: 0;
+	background:#fff;
+	padding:1em 2.3em;
+	font-size:0.875em;
+	text-transform:uppercase;
+	color:#000;
+	display:inline-block;
+	margin:0 auto;
+	margin-bottom: 5px;
+	border-radius:7px;
+	transition:0.5s all ease;
+	-webkit-transition:0.5s all ease;
+	-moz-transition:0.5s all ease;
+	-o-transition:0.5s all ease;
+	-ms-transition:0.5s all ease;
+}
+
 .morebtn-file{
 	border: 0;
-	  background: #000;
-  background-color: rgba(0, 0, 0, 0.6);
+	background: #000;
+	background-color: rgba(0, 0, 0, 0.6);
 	padding:1em 2.3em;
 	font-size:0.875em;
 	text-transform:uppercase;
@@ -213,21 +232,21 @@ a.morebtn:hover{
 	background-size:cover;
 	min-height:600px;
 	text-align:center;
-	padding:5em 0; 
+	padding:5em 0;
 }
 .categories h3,.bikes h3{
-	 color:#000;
-	 font-size:2em;
-	 font-weight:600;
+	color:#000;
+	font-size:2em;
+	font-weight:600;
 }
 .bikes h3{
 	text-align:center;
 }
 .categorie-grids {
-	 margin-top:4em;
+	margin-top:4em;
 }
-.cate-grid{	
-	padding:10em 0 0 0; 
+.cate-grid{
+	padding:10em 0 0 0;
 	min-height:290px;
 	background-size: 100%;
 	margin:0 12px;
@@ -248,7 +267,7 @@ a.morebtn:hover{
 	font-weight:600;
 	letter-spacing:1px;
 	margin-bottom:6px;
-} 
+}
 .cate-grid p{
 	color:#fff;
 	font-size:1.3em;
@@ -301,11 +320,11 @@ a.store:hover{
 	position: relative;
 	line-height: 0px;
 }
-.nbs-flexisel-item > img {	
+.nbs-flexisel-item > img {
 	cursor:auto;
 	position: relative;
-	  width: 90%;
-  margin: 0 5%;
+	width: 90%;
+	margin: 0 5%;
 }
 .bike-info{
 	padding:0 20px;
@@ -352,15 +371,15 @@ select{
 	color:#fcff19;
 }
 .viw{
-	  position: absolute;
-  background: #000;
-  padding: 1.3em 2.5em;
-  font-size: 1em;
-  margin-right: 1em;
-  font-weight: 500;
-  top: 33%;
-  left: 34%;
-  display: none;
+	position: absolute;
+	background: #000;
+	padding: 1.3em 2.5em;
+	font-size: 1em;
+	margin-right: 1em;
+	font-weight: 500;
+	top: 33%;
+	left: 34%;
+	display: none;
 }
 .viw a{
 	color:yellow;
@@ -381,57 +400,57 @@ select{
 }
 .contact h3{
 	color: #000;
-  font-size: 2em;
-  font-weight: 600;
-  margin-bottom:0.7em;
+	font-size: 2em;
+	font-weight: 600;
+	margin-bottom:0.7em;
 }
 .contact p{
-  color: #000;
-  font-size: 1.15em;
-  font-weight: 500;
+	color: #000;
+	font-size: 1.15em;
+	font-weight: 500;
 }
-.contact form{	
+.contact form{
 	width:43%;
 	margin:3em auto 0 auto;
 }
 .contact form input[type="text"], .contact textarea {
-  width: 43%;
-  margin-right: 4%;
-  padding: 10px;
-  border: 1px solid #b7b7b7;
-  font-size: 1em;
-  margin-bottom: 2em;
-  font-style:italic;
-  color: #000;
-  background: #fff;
-  outline: none;
-  font-weight: 400;
-  border-radius:7px;
-  transition: 0.5s all ease;
-  -webkit-transition: 0.5s all ease;
-  -moz-transition: 0.5s all ease;
-  -o-transition: 0.5s all ease;
-  -ms-transition: 0.5s all ease;
+	width: 43%;
+	margin-right: 4%;
+	padding: 10px;
+	border: 1px solid #b7b7b7;
+	font-size: 1em;
+	margin-bottom: 2em;
+	font-style:italic;
+	color: #000;
+	background: #fff;
+	outline: none;
+	font-weight: 400;
+	border-radius:7px;
+	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
 }
 
 form input[type="text"], .contact textarea {
-  width: 100%;
-  margin-right: 4%;
-  padding: 10px;
-  border: 1px solid #b7b7b7;
-  font-size: 1em;
-  margin-bottom: 2em;
-  font-style:italic;
-  color: #000;
-  background: #fff;
-  outline: none;
-  font-weight: 400;
-  border-radius:7px;
-  transition: 0.5s all ease;
-  -webkit-transition: 0.5s all ease;
-  -moz-transition: 0.5s all ease;
-  -o-transition: 0.5s all ease;
-  -ms-transition: 0.5s all ease;
+	width: 100%;
+	margin-right: 4%;
+	padding: 10px;
+	border: 1px solid #b7b7b7;
+	font-size: 1em;
+	margin-bottom: 2em;
+	font-style:italic;
+	color: #000;
+	background: #fff;
+	outline: none;
+	font-weight: 400;
+	border-radius:7px;
+	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
 }
 .frontend-label{
 	color:#fff;
@@ -445,22 +464,22 @@ form input[type="text"], .contact textarea {
 	height:170px;
 }
 .contact form input[type="submit"] {
-  color: #fff;
-  background: #b7b7b7;
-  font-size: 1em;
-  font-weight: 400;
-  text-decoration: none;
-  border: none;  
-  width:90%;
-  margin:0 auto;
-  padding: 10px 30px;
-  display: block;
-  border-radius:7px;  
-  transition: 0.5s all ease;
-  -webkit-transition: 0.5s all ease;
-  -moz-transition: 0.5s all ease;
-  -o-transition: 0.5s all ease;
-  -ms-transition: 0.5s all ease;
+	color: #fff;
+	background: #b7b7b7;
+	font-size: 1em;
+	font-weight: 400;
+	text-decoration: none;
+	border: none;
+	width:90%;
+	margin:0 auto;
+	padding: 10px 30px;
+	display: block;
+	border-radius:7px;
+	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
 }
 .contact form input[type="submit"]:hover{
 	background:#000;
@@ -500,7 +519,7 @@ form input[type="text"], .contact textarea {
 }
 .mountain-sec,.singlespeed-sec{
 	border-bottom:2px solid;
-	padding:0 1.5em 2em 1.5em;  
+	padding:0 1.5em 2em 1.5em;
 }
 .acces{
 	float:left;
@@ -518,20 +537,20 @@ form input[type="text"], .contact textarea {
 	-ms-transition:0.5s all;
 }
 .fast-viw{
-  display: none; 
-  top: 30%;
-  left: 28%;
-  text-align: center;
-    font-weight: 500;
-  position: absolute;
+	display: none;
+	top: 30%;
+	left: 28%;
+	text-align: center;
+	font-weight: 500;
+	position: absolute;
 }
 .fast-viw a{
 	color:yellow;
 	background: #000;
-  padding: 0.85em 2.5em;
-  font-size: 1em;
-  margin-right: 1em;
-  display:block;
+	padding: 0.85em 2.5em;
+	font-size: 1em;
+	margin-right: 1em;
+	display:block;
 }
 .bike:hover div.fast-viw{
 	display:block;
@@ -539,15 +558,15 @@ form input[type="text"], .contact textarea {
 .bike:hover{
 	background:#fcff19;
 }
-.bike img{	
+.bike img{
 	width:100%;
 }
 .bikes h2{
-	 color:#000;
-	 font-size:2.5em;
-	 font-weight:500;
-	 margin-bottom:2em;
-	 text-align:center;
+	color:#000;
+	font-size:2.5em;
+	font-weight:500;
+	margin-bottom:2em;
+	text-align:center;
 }
 .bike-cost{
 	background:#b7b7b7;
@@ -563,7 +582,7 @@ form input[type="text"], .contact textarea {
 	font-weight:500;
 }
 .bike-mdl h4 span{
-	display:block;	
+	display:block;
 	font-weight:300;
 	font-size:0.8em;
 }
@@ -613,7 +632,7 @@ h3.m_2 {
 	margin-bottom: 1em;
 }
 .metro{
-	position: relative;	
+	position: relative;
 	cursor: pointer;
 	font-weight:600;
 	background:#fff;
@@ -650,9 +669,9 @@ h3.m_2 {
 	height: 100%;
 	opacity: 0;
 }
-/* SELECTED FEEDBACK ITEM */ 
+/* SELECTED FEEDBACK ITEM */
 .metro .selected {
-    color: #96a6a7;
+	color: #96a6a7;
 }
 .metro .selected:hover{
 	color:#e94e38;
@@ -672,11 +691,11 @@ h3.m_2 {
 	color: #555555;
 }
 .product_right {
-margin-bottom: 2em;
+	margin-bottom: 2em;
 }
 /* .focus class is also added on hover */
 .metro:hover .selected::after, .metro.focus .selected::after {
-  background: url(../images/p_minus.png) no-repeat 0px 10px;
+	background: url(../images/p_minus.png) no-repeat 0px 10px;
 }
 .metro li:hover{
 	background-color:#ECEB4D;
@@ -691,7 +710,7 @@ margin-bottom: 2em;
 	color:#000;
 }
 .metro li.active{
-    background-color:#ECEB4D;
+	background-color:#ECEB4D;
 	color: #000;
 }
 .metro .selected::after{
@@ -761,17 +780,17 @@ margin-bottom: 2em;
 	color: #fff;
 }
 .metro li:last-child {
-    border-bottom: 0;
+	border-bottom: 0;
 }
 .checkbox i {
-  position: absolute;
-  bottom: 255px;
-  left: 14.9%;
-  display: block;
-  width: 20px;
-  height: 20px;
-  outline: none;
-  border: 2px solid #D2CF99;
+	position: absolute;
+	bottom: 255px;
+	left: 14.9%;
+	display: block;
+	width: 20px;
+	height: 20px;
+	outline: none;
+	border: 2px solid #D2CF99;
 }
 .checkbox{
 	margin-top:0;
@@ -838,11 +857,11 @@ a.add-cart{
 	font-weight:500;
 	position:absolute;
 	top: 36%;
-    left: 21%;
+	left: 21%;
 	display:none;
 }
 a.add-cart:hover{
-	
+
 }
 a.qck{
 	background:#969696;
@@ -865,7 +884,7 @@ a.qck:hover{
 	text-align:center;
 	margin:8em 0;
 }
-.error-head h1{	
+.error-head h1{
 	color:#707070;
 	font-size:16em;
 	display:inline-block;
@@ -906,69 +925,69 @@ a.qck:hover{
 }
 /*----*/
 .product-head {
-padding: 0.5em 0;
-border-top: 1px solid #eee;
-border-bottom: 1px solid #eee;
-margin-bottom: 1em;
+	padding: 0.5em 0;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 1em;
 }
 .product-head  a {
-color: #08080B;
-font-weight: 700;
-font-size: 0.875em;
-padding-bottom: 0.2em;
-display: inline-block;
-text-transform: uppercase;
-transition: 0.5s all;
--webkit-transition: 0.5s all;
--moz-transition: 0.5s all;
--o-transition: 0.5s all;
+	color: #08080B;
+	font-weight: 700;
+	font-size: 0.875em;
+	padding-bottom: 0.2em;
+	display: inline-block;
+	text-transform: uppercase;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
 }
 .product-info h3{
-float:left;
-width:50%;
+	float:left;
+	width:50%;
 }
 .product-info i{
-float:left;
-width:50%;
-display:block;
+	float:left;
+	width:50%;
+	display:block;
 }
 
 .details-left-info {
-float: left;
-margin-left: 5%;
-width:58%;
+	float: left;
+	margin-left: 5%;
+	width:58%;
 }
 .details-left-info  h3 {
-color: #000;
-font-size: 1.4em;
-text-transform: uppercase;
-font-weight: 700;
-margin-bottom: 0.3em;
+	color: #000;
+	font-size: 1.4em;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 0.3em;
 }
 .details-left-info p {
-margin-top: 2%;
-font-size: 1.8em;
-color:#FF0000;
-line-height: 1.8em;
-text-shadow: 0 1px 0 #ffffff;
-letter-spacing: 1px;
+	margin-top: 2%;
+	font-size: 1.8em;
+	color:#FF0000;
+	line-height: 1.8em;
+	text-shadow: 0 1px 0 #ffffff;
+	letter-spacing: 1px;
 }
 .details-left-info p  label{
 	font-size:0.7em;
 }
 .details-left-info  h4 {
-color: #000;
-font-weight:300;
-font-size:0.85em;
-margin-bottom: 1em;
+	color: #000;
+	font-weight:300;
+	font-size:0.85em;
+	margin-bottom: 1em;
 }
 .details-left-info a{
-margin-left: 5px;
-color: #555555;
-text-transform: uppercase;
-font-size: 13px;
--webkit-text-stroke: 0px;
-letter-spacing: 0px;
+	margin-left: 5px;
+	color: #555555;
+	text-transform: uppercase;
+	font-size: 13px;
+	-webkit-text-stroke: 0px;
+	letter-spacing: 0px;
 }
 .details-left-info a:hover{
 	color:#ffd400;
@@ -997,7 +1016,7 @@ a.length{
 	padding:5px;
 }
 .btn_form{
-margin-top:2em;
+	margin-top:2em;
 }
 .btn_form a {
 	border: none;
@@ -1032,129 +1051,129 @@ margin-top:2em;
 	font-weight:400;
 }
 .bike-type a{
-font-weight:400;
-color: #ff530d;
+	font-weight:400;
+	color: #ff530d;
 }
 p.desc{
-font-size:0.9em;
-line-height:1.8em;
-color: #808080;
-margin: 0.5em 0;
+	font-size:0.9em;
+	line-height:1.8em;
+	color: #808080;
+	margin: 0.5em 0;
 }
 .details-left-info h5{
-margin:1em 0;
+	margin:1em 0;
 }
 .single-bottom2 {
-margin-bottom: 2em;
+	margin-bottom: 2em;
 }
 .single-bottom1 h6, .single-bottom2 h6 {
-background: #F3F3F3;
-padding: 10px;
-color: #333;
-font-size: 1.2em;
+	background: #F3F3F3;
+	padding: 10px;
+	color: #333;
+	font-size: 1.2em;
 }
 .product {
-padding: 3% 0 0 0;
+	padding: 3% 0 0 0;
 }
 .product-desc {
-width: 82.3333%;
-float: left;
-border-width: 0 1px 0 0;
-border-right: 1px solid #DDD;
+	width: 82.3333%;
+	float: left;
+	border-width: 0 1px 0 0;
+	border-right: 1px solid #DDD;
 }
 .product-img {
-float: left;
-margin-right: 2.5%;
+	float: left;
+	margin-right: 2.5%;
 }
 .prod1-desc {
-width: 75.2%;
-float: left;
-margin-top: 1.5em;
+	width: 75.2%;
+	float: left;
+	margin-top: 1.5em;
 }
 .product_price {
-width: 15.3333%;
-float: left;
-padding: 0 0px 0px 16px;
-margin-top: 1.5em;
+	width: 15.3333%;
+	float: left;
+	padding: 0 0px 0px 16px;
+	margin-top: 1.5em;
 }
 .product-desc h5 a {
-color: #555;
-font-size: 20px;
-margin-bottom:1em;
-display:block;
+	color: #555;
+	font-size: 20px;
+	margin-bottom:1em;
+	display:block;
 }
 .product-desc h5 a:hover {
-color: #64C4B8;
-text-decoration:none;
+	color: #64C4B8;
+	text-decoration:none;
 }
 .price-access {
-color: #555;
-font-size: 1em;
+	color: #555;
+	font-size: 1em;
 }
 a.button1 {
-border: none;
-background:#64C4B8;
-padding: 7px 15px;
-color: #FFF;
-font-size: 13px;
-cursor: pointer;
-outline: none;
-margin-top: 9%;
--webkit-transition: all 0.3s ease-in-out;
--moz-transition: all 0.3s ease-in-out;
--o-transition: all 0.3s ease-in-out;
-transition: all 0.3s ease-in-out;
+	border: none;
+	background:#64C4B8;
+	padding: 7px 15px;
+	color: #FFF;
+	font-size: 13px;
+	cursor: pointer;
+	outline: none;
+	margin-top: 9%;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 .button1:hover{
-background:#FF7105;
+	background:#FF7105;
 }
 .single-bottom2 {
-margin-bottom: 2em;
+	margin-bottom: 2em;
 }
 .single-bottom1 h6, .single-bottom2 h6 {
-background: #F3F3F3;
-padding: 10px;
-color: #333;
-font-size: 1.2em;
+	background: #F3F3F3;
+	padding: 10px;
+	color: #333;
+	font-size: 1.2em;
 }
 .product {
-padding: 3% 0 0 0;
+	padding: 3% 0 0 0;
 }
 .product-desc {
-width: 82.3333%;
-float: left;
-border-width: 0 1px 0 0;
-border-right: 1px solid #DDD;
+	width: 82.3333%;
+	float: left;
+	border-width: 0 1px 0 0;
+	border-right: 1px solid #DDD;
 }
 .product-img {
-float: left;
-margin-right: 2.5%;
-  width: 22%;
+	float: left;
+	margin-right: 2.5%;
+	width: 22%;
 }
 .prod1-desc {
-width: 75.2%;
-float: left;
-margin-top: 1.5em;
+	width: 75.2%;
+	float: left;
+	margin-top: 1.5em;
 }
 .product_price {
-width: 15.3333%;
-float: left;
-padding: 0 0px 0px 16px;
-margin-top: 1.5em;
+	width: 15.3333%;
+	float: left;
+	padding: 0 0px 0px 16px;
+	margin-top: 1.5em;
 }
 .product-desc h5 a {
-color: #555;
-font-size: 20px;
-margin-bottom:1em;
-display:block;
+	color: #555;
+	font-size: 20px;
+	margin-bottom:1em;
+	display:block;
 }
 .product-desc h5 a:hover {
-color: #64C4B8;
-text-decoration:none;
+	color: #64C4B8;
+	text-decoration:none;
 }
 .price-access {
-color: #555;
-font-size: 1em;
+	color: #555;
+	font-size: 1em;
 }
 /*--cart--*/
 .cart{
@@ -1174,23 +1193,23 @@ font-size: 1em;
 	color:#D74D4D;
 }
 p.qty {
-  margin: 15px 10px 0 0;
-  color: #333333;
-  font-size: 1em;
-  display: inline-block;
+	margin: 15px 10px 0 0;
+	color: #333333;
+	font-size: 1em;
+	display: inline-block;
 }
 .details-left-info #quantity {
-  width: 50px;
-  height: 37px;
-  display: inline-block;
-  margin: 15px 10px 0 0;
-  padding: 9px 0px 8px;
-  outline: none;
-  text-align: center;
+	width: 50px;
+	height: 37px;
+	display: inline-block;
+	margin: 15px 10px 0 0;
+	padding: 9px 0px 8px;
+	outline: none;
+	text-align: center;
 }
 .form-control {
-  display: inline-block;
-  width: 13%;
+	display: inline-block;
+	width: 13%;
 }
 .cart h2{
 	font-size:1.5em;
@@ -1198,7 +1217,7 @@ p.qty {
 }
 .cart-items{
 	padding-left:0;
-	padding-top:1em;	
+	padding-top:1em;
 }
 .cart-sec{
 	background:#eee;
@@ -1210,7 +1229,7 @@ p.qty {
 	float:left;
 	margin-right:3%;
 	padding: 1em 1em 0.6em 1em;
-  background: #fff;
+	background: #fff;
 }
 .cart-item img{
 	width:100%;
@@ -1218,8 +1237,8 @@ p.qty {
 .cart-item-info{
 	width:77%;
 	float:left;
-	  border-bottom: 1px solid;
-  padding-bottom: 5px;
+	border-bottom: 1px solid;
+	padding-bottom: 5px;
 }
 .cart-item-info h3{
 	font-size:1em;
@@ -1242,30 +1261,30 @@ p.qty {
 .cart-item-info h4 span{
 	font-size:0.65em;
 	font-weight:400;
-} 
+}
 .cart-item-info p{
 	font-size:1em;
 	font-weight:400;
 	line-height:1.3em;
 }
 .close1,.close2{
-  background: url('../images/close.png') no-repeat 0px 0px;
-  cursor: pointer;
-  width: 28px;
-  height: 28px;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  -webkit-transition: color 0.2s ease-in-out;
-  -moz-transition: color 0.2s ease-in-out;
-  -o-transition: color 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out;
+	background: url('../images/close.png') no-repeat 0px 0px;
+	cursor: pointer;
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	-webkit-transition: color 0.2s ease-in-out;
+	-moz-transition: color 0.2s ease-in-out;
+	-o-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
 }
-.cart-header {  
-  position: relative;  
+.cart-header {
+	position: relative;
 }
-.cart-header2 {  
-  position: relative;  
+.cart-header2 {
+	position: relative;
 }
 .delivery{
 	margin-left:13em;
@@ -1290,10 +1309,10 @@ a.continue{
 	color:#fff;
 	text-decoration:none;
 	display: block;
-   font-weight: 600;  
-   text-align: center;
-   width: 72%;
-   margin: 0px auto 3em auto;
+	font-weight: 600;
+	text-align: center;
+	width: 72%;
+	margin: 0px auto 3em auto;
 }
 a.continue:hover{
 	background:#333;
@@ -1330,21 +1349,21 @@ h4.last-price{
 	padding-top:10px;
 }
 .cart-total {
-  padding-top: 26px;
-  border-left: 1px solid;
+	padding-top: 26px;
+	border-left: 1px solid;
 }
 a.order {
-  background:#333;
-  padding: 10px 1.5em;
-  border-radius: 7px;
-  font-size: 1em;
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  font-weight: 600;
-  text-align: center;
-  width: 85%;
-  margin: 3em auto 0 auto;
+	background:#333;
+	padding: 10px 1.5em;
+	border-radius: 7px;
+	font-size: 1em;
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	font-weight: 600;
+	text-align: center;
+	width: 85%;
+	margin: 3em auto 0 auto;
 }
 a.order:hover{
 	background:orange;
@@ -1354,9 +1373,9 @@ a.order:hover{
 	padding-bottom:2em;
 }
 .total-item h3 {
-  color: #333;
-  font-size: 1em;
-  margin-bottom: 1em;
+	color: #333;
+	font-size: 1em;
+	margin-bottom: 1em;
 }
 .total-item h4{
 	font-size:0.8em;
@@ -1370,7 +1389,7 @@ a.cpns{
 	color:#fff;
 	border-radius:6px;
 	padding: 10px;
-  font-size: 0.8em;
+	font-size: 0.8em;
 	font-weight:600;
 }
 a.cpns:hover{
@@ -1380,7 +1399,7 @@ a.cpns:hover{
 	font-size:0.9em;
 	font-weight:400;
 	margin-top:1em;
-	color:#727272;	
+	color:#727272;
 }
 .total-item p a:hover{
 	color:#333;
@@ -1391,907 +1410,907 @@ label{
 }
 /*--responsive--*/
 @media (max-width: 1440px){
-.model {
-  width: 45%;
-}
-.model-info {
-  width: 55%;
-}
-.contact form input[type="submit"] {
-  width: 89%;
-  margin: 0 0 0 18px;
-  padding: 11px 0px;
-}
-a.add-cart {  
-  left: 24%;
-}
+	.model {
+		width: 45%;
+	}
+	.model-info {
+		width: 55%;
+	}
+	.contact form input[type="submit"] {
+		width: 89%;
+		margin: 0 0 0 18px;
+		padding: 11px 0px;
+	}
+	a.add-cart {
+		left: 24%;
+	}
 }
 @media (max-width: 1366px){
-.top-nav {
-  margin-top: 0;
-}
+	.top-nav {
+		margin-top: 0;
+	}
 }
 @media (max-width: 1280px){
-.model {
-  width: 37%;
-}
-.model-info {
-  width: 59%;
-}
-.banner-bg1{
-  min-height: 660px;
-}
-.caption h1 {
-  font-size: 3em;
-}
-.caption p {
-  font-size: 1.8em;
-}
-.callbacks_nav {
-  left: 20px;
-    height: 48px;
-  width: 49px;  
-  background-size: 104px;
-}
-.bikes h2 {
-  font-size: 2.2em;
-}
+	.model {
+		width: 37%;
+	}
+	.model-info {
+		width: 59%;
+	}
+	.banner-bg1{
+		min-height: 660px;
+	}
+	.caption h1 {
+		font-size: 3em;
+	}
+	.caption p {
+		font-size: 1.8em;
+	}
+	.callbacks_nav {
+		left: 20px;
+		height: 48px;
+		width: 49px;
+		background-size: 104px;
+	}
+	.bikes h2 {
+		font-size: 2.2em;
+	}
 }
 @media (max-width: 1024px){
-.banner-bg1{
-  min-height: 570px;
-}
-.banner-sec {
-  min-height: 146px;
-}
-.caption h1 {
-  font-size: 2.75em;
-}
-.caption p {
-  font-size: 1.5em;
-} 
-.dwn img {
-  background-size: 100%;
-  width: 59%;
-}
-.dwn {
-  bottom: 6%;
-  left: 48%;
-}
-.cate-grid p {
-  font-size: 1.15em;
-}
-a.morebtn {
-  padding: 0.85em 2.3em;
-  font-size: 0.8em;
-}
-.cate-grid {
-  padding: 7em 0 0 0;
-  min-height: 273px;
-  margin: 0px 15px;
-  width: 30%;
-}
-.categories {
-  min-height: 513px;
-}
-.model h4 {
-  font-size: 0.85em;
-}
-.model h4 span {
-  font-size: 0.9em;
-}
-.model {
-  width: 30%;
-}
-select {
-  padding: 6px 1em 6px 0.5em;
-  margin-right: 5px;
-  font-size: 0.95em;
-}
-.model-info a {
-  font-size: 0.9em;
-  padding: 0.7em 2em;
-}
-.model-info {
-  width: 70%;
-}
-.contact form input[type="submit"] {
-  margin: 0 0 0 14px;
-}
-.bikes {
-  padding: 3em 0 2em 0; 
-}
-.bike-mdl {
-  width: 61%;
-}
-.bike-cart {
-  width: 39%;
-}
-.bike-cart a.buy {
-  font-size: 0.85em;
-  padding: 0.5em 2em
-}
-.bikes h2 {
-  font-size: 1.8em;
-}
-.part-sec img {
-  height: 154px;
-  padding: 15px;
-}
-.parts h2 {
-  font-size: 1.8em;
-}
-.error-head h1 {
-  font-size: 13em;
-}
-.error-head span {
-  font-size: 3em;
-}
-.cart-item-info h4 {
-  font-size: 1.5em;
-}
-.delivery {
-  margin-left: 11em;
-}
-.delivery p,.delivery span {
-  font-size: 0.9em;
-}
-.cart-items {
-  width: 71%;
-}
-.cart-total {
-  width: 28%;
-}
-.cart h2 {
-  font-size: 1.3em;
-}
-.viw {
-  padding: 1.3em 2.5em;
-  font-size: 0.9em;
-  left: 30%;
-}
-.fast-viw {
-  padding: 0.7em 2.2em;
-  font-size: 0.9em;
-  top: 23%;
-  left:7%;
-}
-.bike {
-  padding: 0.5em 0;
-}
+	.banner-bg1{
+		min-height: 570px;
+	}
+	.banner-sec {
+		min-height: 146px;
+	}
+	.caption h1 {
+		font-size: 2.75em;
+	}
+	.caption p {
+		font-size: 1.5em;
+	}
+	.dwn img {
+		background-size: 100%;
+		width: 59%;
+	}
+	.dwn {
+		bottom: 6%;
+		left: 48%;
+	}
+	.cate-grid p {
+		font-size: 1.15em;
+	}
+	a.morebtn {
+		padding: 0.85em 2.3em;
+		font-size: 0.8em;
+	}
+	.cate-grid {
+		padding: 7em 0 0 0;
+		min-height: 273px;
+		margin: 0px 15px;
+		width: 30%;
+	}
+	.categories {
+		min-height: 513px;
+	}
+	.model h4 {
+		font-size: 0.85em;
+	}
+	.model h4 span {
+		font-size: 0.9em;
+	}
+	.model {
+		width: 30%;
+	}
+	select {
+		padding: 6px 1em 6px 0.5em;
+		margin-right: 5px;
+		font-size: 0.95em;
+	}
+	.model-info a {
+		font-size: 0.9em;
+		padding: 0.7em 2em;
+	}
+	.model-info {
+		width: 70%;
+	}
+	.contact form input[type="submit"] {
+		margin: 0 0 0 14px;
+	}
+	.bikes {
+		padding: 3em 0 2em 0;
+	}
+	.bike-mdl {
+		width: 61%;
+	}
+	.bike-cart {
+		width: 39%;
+	}
+	.bike-cart a.buy {
+		font-size: 0.85em;
+		padding: 0.5em 2em
+	}
+	.bikes h2 {
+		font-size: 1.8em;
+	}
+	.part-sec img {
+		height: 154px;
+		padding: 15px;
+	}
+	.parts h2 {
+		font-size: 1.8em;
+	}
+	.error-head h1 {
+		font-size: 13em;
+	}
+	.error-head span {
+		font-size: 3em;
+	}
+	.cart-item-info h4 {
+		font-size: 1.5em;
+	}
+	.delivery {
+		margin-left: 11em;
+	}
+	.delivery p,.delivery span {
+		font-size: 0.9em;
+	}
+	.cart-items {
+		width: 71%;
+	}
+	.cart-total {
+		width: 28%;
+	}
+	.cart h2 {
+		font-size: 1.3em;
+	}
+	.viw {
+		padding: 1.3em 2.5em;
+		font-size: 0.9em;
+		left: 30%;
+	}
+	.fast-viw {
+		padding: 0.7em 2.2em;
+		font-size: 0.9em;
+		top: 23%;
+		left:7%;
+	}
+	.bike {
+		padding: 0.5em 0;
+	}
 }
 @media (max-width:768px){
-.viw {
-  padding: 1.3em 2.3em;
-  font-size: 0.85em;
- left: 25%;
-  top: 27%;
-}
-.bike-info {
-  margin-top: 1em;
-}
-.top-nav {
-  margin-top: 1px;
-  width: 70%;
-  position: absolute;
-  right: 7px;
-}
-.rslides li:first-child {
-  color:#000;
-  padding:0;
-  border-top-left-radius:0;
- border-top-right-radius:0;
-}
-.caption {
-  z-index: 0;
-}
-a.shop {
-  display: inline-block;
-  float: left;
-  margin: 0px 0 0 0px;
-  background: #828282;
-  width: 100%;
-  padding: 8px;
-}
-.banner-bg1{
-  min-height: 490px;
-}
-.caption h1 {
-  font-size: 2.5em;
-}
-.cate-grid {
-  padding: 6em 0 0 0;
-  min-height: 223px;
-  float: left;
-  width: 29%;
-}
-.categories {
-  padding:3em 0 0 0;
-  min-height: 400px;
-}
-.categories h3, .bikes h3,.contact h3 {
-  font-size: 1.7em;
-}
-.categorie-grids {
-  margin-top: 2em;
-}
-.cate-grid p {
-  font-size:0.85em;
-}
-.model {
-  width: 100%;
-}
-.model-info {
-  width: 100%;
-  text-align: left;
-  margin:5px 0;
-}
-.model h4 {
-  font-size: 1em;
-}
-select {
-    padding: 1px 1em 3px 0.5em;
-  font-size: 0.8em;
-}
-.model-info a {
-    font-size: 0.8em;
-  padding: 0.4em 2em;
-}
-.bikes-grids {
-  margin-top: 5em;
-}
-.contact p {
-  font-size: 1.1em;
-}
-.contact {
-  min-height: 550px;
-  padding: 2em 0 0 0;
-}
-.contact form {
-  width: 65%;
-}
-.wrap{
-	width:724px;
-	padding:0 15px;
-}
-.none1{
-	display:none;
-}
-.bike {
-  width: 31%;
-}
-.rsidebar {
-  width: 25%;
-}
-.bike-parts {
-  width: 71%;
-}
-.part-sec {
-  width: 29%;
-}
-.part-sec img {
-  height: 150px;
-  padding: 13px;
-}
-.ftr-menu ul li a {
-  font-size: 1em;
-}
-.cart-items {
-  width: 100%;
-}
-.cart-total {
-  width: 100%;
-  border-left:none;
-}
-a.continue{
-	width:30%;
-}
-a.order{
-	width:40%;
-}
-a.add-cart {
-  left: 18%;
-  top: 28%;
-}
-.product-desc {
-  width: 73%;
-}
-.product_price {
-  width: 26%;
-}
-.prod1-desc p{
-	overflow:hidden;
-	height:83px;
-}
-.prod1-desc {
-  width: 72%;
-}
-.grid.images_3_of_2 {
-  width: 37%;
-  float: left;
-}
-p.desc {
-  overflow: hidden;
-  height: 131px;
-}
+	.viw {
+		padding: 1.3em 2.3em;
+		font-size: 0.85em;
+		left: 25%;
+		top: 27%;
+	}
+	.bike-info {
+		margin-top: 1em;
+	}
+	.top-nav {
+		margin-top: 1px;
+		width: 70%;
+		position: absolute;
+		right: 7px;
+	}
+	.rslides li:first-child {
+		color:#000;
+		padding:0;
+		border-top-left-radius:0;
+		border-top-right-radius:0;
+	}
+	.caption {
+		z-index: 0;
+	}
+	a.shop {
+		display: inline-block;
+		float: left;
+		margin: 0px 0 0 0px;
+		background: #828282;
+		width: 100%;
+		padding: 8px;
+	}
+	.banner-bg1{
+		min-height: 490px;
+	}
+	.caption h1 {
+		font-size: 2.5em;
+	}
+	.cate-grid {
+		padding: 6em 0 0 0;
+		min-height: 223px;
+		float: left;
+		width: 29%;
+	}
+	.categories {
+		padding:3em 0 0 0;
+		min-height: 400px;
+	}
+	.categories h3, .bikes h3,.contact h3 {
+		font-size: 1.7em;
+	}
+	.categorie-grids {
+		margin-top: 2em;
+	}
+	.cate-grid p {
+		font-size:0.85em;
+	}
+	.model {
+		width: 100%;
+	}
+	.model-info {
+		width: 100%;
+		text-align: left;
+		margin:5px 0;
+	}
+	.model h4 {
+		font-size: 1em;
+	}
+	select {
+		padding: 1px 1em 3px 0.5em;
+		font-size: 0.8em;
+	}
+	.model-info a {
+		font-size: 0.8em;
+		padding: 0.4em 2em;
+	}
+	.bikes-grids {
+		margin-top: 5em;
+	}
+	.contact p {
+		font-size: 1.1em;
+	}
+	.contact {
+		min-height: 550px;
+		padding: 2em 0 0 0;
+	}
+	.contact form {
+		width: 65%;
+	}
+	.wrap{
+		width:724px;
+		padding:0 15px;
+	}
+	.none1{
+		display:none;
+	}
+	.bike {
+		width: 31%;
+	}
+	.rsidebar {
+		width: 25%;
+	}
+	.bike-parts {
+		width: 71%;
+	}
+	.part-sec {
+		width: 29%;
+	}
+	.part-sec img {
+		height: 150px;
+		padding: 13px;
+	}
+	.ftr-menu ul li a {
+		font-size: 1em;
+	}
+	.cart-items {
+		width: 100%;
+	}
+	.cart-total {
+		width: 100%;
+		border-left:none;
+	}
+	a.continue{
+		width:30%;
+	}
+	a.order{
+		width:40%;
+	}
+	a.add-cart {
+		left: 18%;
+		top: 28%;
+	}
+	.product-desc {
+		width: 73%;
+	}
+	.product_price {
+		width: 26%;
+	}
+	.prod1-desc p{
+		overflow:hidden;
+		height:83px;
+	}
+	.prod1-desc {
+		width: 72%;
+	}
+	.grid.images_3_of_2 {
+		width: 37%;
+		float: left;
+	}
+	p.desc {
+		overflow: hidden;
+		height: 131px;
+	}
 }
 @media (max-width:640px){
-.logo a img{
-	background-size:100%;
-	width:100%;
-}
-.logo{
-	width:20%;
-}
-.top-nav {
-  width: 57%;
-  top: 32px;
-}
-.caption h1 {
-  font-size: 2.2em;
-  margin-bottom:2px;
-}
-.caption p {
-  font-size: 1.2em;
-}
-a.morebtn {
-  padding: 0.8em 2em;
-  font-size: 0.73em;
-}
-.banner-bg1 {
-  min-height: 435px;
-}
-.callbacks_nav {
-  left: 8px;
-  height: 36px;
-  width: 38px;
-  background-size: 76px;
-  margin-top: -36px;
-}
-.callbacks_nav.next{
-	right:8px;
-}
-a.shop img {
-  background-size: 100%;
-  width: 6%;
-}
-.cate-grid {
-  padding: 4em 0 0 0;
-  min-height: 166px;
-  width: 28%;
-}
-.cate-grid h4 {
-  font-size: 0.9em;
-}
-.cate-grid p {
-  font-size: 0.7em;
-}
-a.store {
-  font-size: 0.7em;
-  border: 2px solid #fff;
-  padding: 0.5em 1.2em;
-}
-.categories {
-  min-height: 317px;
-}
-.categories h3, .bikes h3, .contact h3 {
-  font-size: 1.4em;
-}
-.bikes-grids {
-  margin-top: 4em;
-}
-.contact p {
-  font-size: 0.95em;
-}
-.contact form input[type="text"], .contact textarea {
-  padding: 7px;
-  font-size: 0.85em;
-}
-.contact form {
-  width: 70%;
-}
-.contact textarea {
-  height: 127px;
-}
-.contact form input[type="submit"] {
-  margin: 0 0 0 14px;
-  font-size: 0.9em;
-  padding: 9px 0px;
-}
-.contact {
-  min-height: 470px;
-}
-.wrap {
-  width: 600px;
-}
-.ftr-menu ul li a {
-  font-size: 0.9em;
-}
-.banner-sec {
-  min-height: 130px;
-}
-.bike-mdl {
-  width: 100%;
-  margin-bottom:5px;
-  text-align: center;
-}
-.bike-mdl h4{
-	font-size:1em;
-}
-.bike-cart {
-  width: 100%; 
-  text-align: center;
-}
-.bike-cart a.buy {
-  font-size: 0.8em;
-  padding: 0.5em 4em;
-}
-.bikes h2 {
-  font-size: 1.5em;
-  margin-bottom: 1.5em;
-}
-.bikes {
-  padding: 2em 0 2em 0;
-}
-.parts1 {
-  margin-top: 10px;
-}
-.part-sec img {
-  height: 131px;
-  padding: 12px;
-}
-.part-sec a h5 {
-  font-size: 0.9em;
-}
-a.add-cart {
-  left: 17%;
-  font-size: 0.8em;
-}
-a.qck{
-	font-size:0.9em;
-}
-.parts h2 {
-  font-size: 1.5em;
-}
-.bike-parts-sec {
-  margin-top: 2em;
-}
-.details-left-info {
-  width: 51%;
-}
-p.desc {
-  overflow: hidden;
-  height: 110px;
-}
-.prod1-desc p{
-	font-size:0.9em;
-	overflow: hidden;
-  height: 52px
-}
-.product-desc{
-	width:70%;
-}
-.product_price{
-	width:30%;
-}
-.prod1-desc {
-  margin-top: 0.5em;
-}
-.product-desc h5 a {
-  font-size: 17px;
-  margin-bottom: 0.7em;
-}
-.btn_form a {
-  font-size: 0.9em;
-  padding: 8px 29px;
-}
-.fast-viw {
-  padding: 0.6em 2em;
-  font-size: 0.8em;
-  top: 18%;
-  left: 5%;
-}
+	.logo a img{
+		background-size:100%;
+		width:100%;
+	}
+	.logo{
+		width:20%;
+	}
+	.top-nav {
+		width: 57%;
+		top: 32px;
+	}
+	.caption h1 {
+		font-size: 2.2em;
+		margin-bottom:2px;
+	}
+	.caption p {
+		font-size: 1.2em;
+	}
+	a.morebtn {
+		padding: 0.8em 2em;
+		font-size: 0.73em;
+	}
+	.banner-bg1 {
+		min-height: 435px;
+	}
+	.callbacks_nav {
+		left: 8px;
+		height: 36px;
+		width: 38px;
+		background-size: 76px;
+		margin-top: -36px;
+	}
+	.callbacks_nav.next{
+		right:8px;
+	}
+	a.shop img {
+		background-size: 100%;
+		width: 6%;
+	}
+	.cate-grid {
+		padding: 4em 0 0 0;
+		min-height: 166px;
+		width: 28%;
+	}
+	.cate-grid h4 {
+		font-size: 0.9em;
+	}
+	.cate-grid p {
+		font-size: 0.7em;
+	}
+	a.store {
+		font-size: 0.7em;
+		border: 2px solid #fff;
+		padding: 0.5em 1.2em;
+	}
+	.categories {
+		min-height: 317px;
+	}
+	.categories h3, .bikes h3, .contact h3 {
+		font-size: 1.4em;
+	}
+	.bikes-grids {
+		margin-top: 4em;
+	}
+	.contact p {
+		font-size: 0.95em;
+	}
+	.contact form input[type="text"], .contact textarea {
+		padding: 7px;
+		font-size: 0.85em;
+	}
+	.contact form {
+		width: 70%;
+	}
+	.contact textarea {
+		height: 127px;
+	}
+	.contact form input[type="submit"] {
+		margin: 0 0 0 14px;
+		font-size: 0.9em;
+		padding: 9px 0px;
+	}
+	.contact {
+		min-height: 470px;
+	}
+	.wrap {
+		width: 600px;
+	}
+	.ftr-menu ul li a {
+		font-size: 0.9em;
+	}
+	.banner-sec {
+		min-height: 130px;
+	}
+	.bike-mdl {
+		width: 100%;
+		margin-bottom:5px;
+		text-align: center;
+	}
+	.bike-mdl h4{
+		font-size:1em;
+	}
+	.bike-cart {
+		width: 100%;
+		text-align: center;
+	}
+	.bike-cart a.buy {
+		font-size: 0.8em;
+		padding: 0.5em 4em;
+	}
+	.bikes h2 {
+		font-size: 1.5em;
+		margin-bottom: 1.5em;
+	}
+	.bikes {
+		padding: 2em 0 2em 0;
+	}
+	.parts1 {
+		margin-top: 10px;
+	}
+	.part-sec img {
+		height: 131px;
+		padding: 12px;
+	}
+	.part-sec a h5 {
+		font-size: 0.9em;
+	}
+	a.add-cart {
+		left: 17%;
+		font-size: 0.8em;
+	}
+	a.qck{
+		font-size:0.9em;
+	}
+	.parts h2 {
+		font-size: 1.5em;
+	}
+	.bike-parts-sec {
+		margin-top: 2em;
+	}
+	.details-left-info {
+		width: 51%;
+	}
+	p.desc {
+		overflow: hidden;
+		height: 110px;
+	}
+	.prod1-desc p{
+		font-size:0.9em;
+		overflow: hidden;
+		height: 52px
+	}
+	.product-desc{
+		width:70%;
+	}
+	.product_price{
+		width:30%;
+	}
+	.prod1-desc {
+		margin-top: 0.5em;
+	}
+	.product-desc h5 a {
+		font-size: 17px;
+		margin-bottom: 0.7em;
+	}
+	.btn_form a {
+		font-size: 0.9em;
+		padding: 8px 29px;
+	}
+	.fast-viw {
+		padding: 0.6em 2em;
+		font-size: 0.8em;
+		top: 18%;
+		left: 5%;
+	}
 }
 @media(max-width: 480px) {
-.top-nav {
-    top: 34px;
-  right: 12px;
-}
-.logo {
-  width: 26%;
-}
-.caption h1 {
-  font-size: 1.8em;
-  margin-bottom: 2px;
-}
-.caption p {
-  font-size: 1.1em;
-}
-.callbacks_nav {
-  height: 39px;
-  width: 31px;
-  background-size: 62px;
-}
-.banner-bg1 {
-  min-height: 355px;
-}
-.dwn {
-  bottom: 5%;
-  left: 47%;
-}
-.dwn img {
-  width: 47%;
-}
-.cate-grid {
-  padding: 3.5em 0 0 0;
-  min-height: 125px;
-  width: 26%;
-}
-.cate-grid h4 {
-  font-size: 0.7em;
-  overflow: hidden;
-  height: 12px;
-}
-.cate-grid p {
-  display: none;
-}
-a.store {
-  font-size: 0.65em;
-  margin-top:0.3em;
-}
-.categories {
-  min-height: 235px;
-  padding:3em 0 0 0;
-}
-.categories h3, .bikes h3, .contact h3 {
-  font-size: 1.3em;
-}
-.model,.model-info{
-	text-align:center;
-}
-select {
-  padding: 7px 2em 8px 1.5em;
-  font-size: 0.9em;
-}
-.model-info a {
-  padding: 0.7em 3em;
-}
-.contact p {
-  font-size: 0.83em;
-}
-.contact form {
-  width: 100%;
-  margin: 2em auto 0 auto;
-}
-.contact {
-  min-height: 455px;
-}
-.wrap {
-  width: 420px;
-}
-.footer {
-  text-align: center;
-}
-.logo2{
-	margin-bottom:0.5em;
-}
-.logo2,.ftr-menu{
-	float:none;
-}
-.bike-cart a.buy {
-  padding: 0.5em 2em;
-}
-.mountain-sec, .singlespeed-sec {
-  padding: 0 0em 2em 0em;
-}
-.bike-mdl h4 span{
-	display:none;
-}
-.bike-mdl{
-	margin-bottom:2px;
-}
-.bike-mdl h4 {
-  font-size: 0.9em;
-}
-.bikes h2 {
-  font-size: 1.3em;
-}
-.rsidebar {
-  width: 100%;
-}
-.bike-parts {
-  width: 100%;
-}
-.part-sec:nth-child(18){
-	border-bottom:0;
-}
-.details-left-info {
-  width: 100%;
-  margin-left: 2%;
-}
-.details-left-info h3 {
-  font-size: 1.1em;
-}
-.prod1-desc {
-  width: 72%;
-}
-.product_price {
-  width: 22%;
-  margin-top: 0em;
-    padding: 0 0px 0px 8px;
-}
-.button1 {
-display:block;
-}
-.product-desc h5 a {
-  font-size: 15px;
-  margin-bottom: 0.5em;
-}
-.product_price {
-  width: 25%
-}
-.bottom-line{
-	border-bottom:0;
-}
-.parts h2 {
-  font-size: 1.3em;
-}
-.error-head h1 {
-  font-size: 10em;
-}
-.error-head span {
-  font-size: 2.3em;
-}
-.error-head h2 {
-  font-size: 1.5em;
-}
-.cart h2 {
-  font-size: 1em;
-}
-.cart-item {
-  width: 29%;
-}
-.cart-item-info {
-  width: 66%;
-}
-.delivery {
-  margin-left: 0em;
-}
-.cart-item-info h4 {
-  font-size: 1.2em;
-}
-.cart-item-info h3 {
-  font-size: 0.9em;
-}
-.delivery p, .delivery span {
-  font-size: 0.8em;
-  margin-top:5px;
-}
-.form-control {
-  width: 22%;
-}
-.cyc {
-  padding: 22px 9px;
-}
-a.continue {
-  width: 43%;
-  padding: 8px 1.5em;
-  font-size: 0.9em;
-}
-.cart-total {
-  padding-top: 9px;
-}
-h4.last-price,span.final {
-  font-size: 1em;
-}
-a.order,.price-details span{
-	font-size:0.9em;
-}
-.viw {
-  padding: 1.5em 2.3em;
-  left: 36%;
-  top: 29%;
-}
-.contact form input[type="text"].user,.contact form input[type="submit"] {
-  width: 100%;
-    margin-bottom: 1.2em;
-}
-.contact form input[type="text"], .contact textarea{
-  width: 100%;
-  margin-right:0;
-    margin-bottom: 1.2em;
-}
-.contact form input[type="submit"] {
-margin:0;
-}
-.fast-viw {
-  font-size: 0.6em;
-  top: 16%;
-  left: 3%;
-}
+	.top-nav {
+		top: 34px;
+		right: 12px;
+	}
+	.logo {
+		width: 26%;
+	}
+	.caption h1 {
+		font-size: 1.8em;
+		margin-bottom: 2px;
+	}
+	.caption p {
+		font-size: 1.1em;
+	}
+	.callbacks_nav {
+		height: 39px;
+		width: 31px;
+		background-size: 62px;
+	}
+	.banner-bg1 {
+		min-height: 355px;
+	}
+	.dwn {
+		bottom: 5%;
+		left: 47%;
+	}
+	.dwn img {
+		width: 47%;
+	}
+	.cate-grid {
+		padding: 3.5em 0 0 0;
+		min-height: 125px;
+		width: 26%;
+	}
+	.cate-grid h4 {
+		font-size: 0.7em;
+		overflow: hidden;
+		height: 12px;
+	}
+	.cate-grid p {
+		display: none;
+	}
+	a.store {
+		font-size: 0.65em;
+		margin-top:0.3em;
+	}
+	.categories {
+		min-height: 235px;
+		padding:3em 0 0 0;
+	}
+	.categories h3, .bikes h3, .contact h3 {
+		font-size: 1.3em;
+	}
+	.model,.model-info{
+		text-align:center;
+	}
+	select {
+		padding: 7px 2em 8px 1.5em;
+		font-size: 0.9em;
+	}
+	.model-info a {
+		padding: 0.7em 3em;
+	}
+	.contact p {
+		font-size: 0.83em;
+	}
+	.contact form {
+		width: 100%;
+		margin: 2em auto 0 auto;
+	}
+	.contact {
+		min-height: 455px;
+	}
+	.wrap {
+		width: 420px;
+	}
+	.footer {
+		text-align: center;
+	}
+	.logo2{
+		margin-bottom:0.5em;
+	}
+	.logo2,.ftr-menu{
+		float:none;
+	}
+	.bike-cart a.buy {
+		padding: 0.5em 2em;
+	}
+	.mountain-sec, .singlespeed-sec {
+		padding: 0 0em 2em 0em;
+	}
+	.bike-mdl h4 span{
+		display:none;
+	}
+	.bike-mdl{
+		margin-bottom:2px;
+	}
+	.bike-mdl h4 {
+		font-size: 0.9em;
+	}
+	.bikes h2 {
+		font-size: 1.3em;
+	}
+	.rsidebar {
+		width: 100%;
+	}
+	.bike-parts {
+		width: 100%;
+	}
+	.part-sec:nth-child(18){
+		border-bottom:0;
+	}
+	.details-left-info {
+		width: 100%;
+		margin-left: 2%;
+	}
+	.details-left-info h3 {
+		font-size: 1.1em;
+	}
+	.prod1-desc {
+		width: 72%;
+	}
+	.product_price {
+		width: 22%;
+		margin-top: 0em;
+		padding: 0 0px 0px 8px;
+	}
+	.button1 {
+		display:block;
+	}
+	.product-desc h5 a {
+		font-size: 15px;
+		margin-bottom: 0.5em;
+	}
+	.product_price {
+		width: 25%
+	}
+	.bottom-line{
+		border-bottom:0;
+	}
+	.parts h2 {
+		font-size: 1.3em;
+	}
+	.error-head h1 {
+		font-size: 10em;
+	}
+	.error-head span {
+		font-size: 2.3em;
+	}
+	.error-head h2 {
+		font-size: 1.5em;
+	}
+	.cart h2 {
+		font-size: 1em;
+	}
+	.cart-item {
+		width: 29%;
+	}
+	.cart-item-info {
+		width: 66%;
+	}
+	.delivery {
+		margin-left: 0em;
+	}
+	.cart-item-info h4 {
+		font-size: 1.2em;
+	}
+	.cart-item-info h3 {
+		font-size: 0.9em;
+	}
+	.delivery p, .delivery span {
+		font-size: 0.8em;
+		margin-top:5px;
+	}
+	.form-control {
+		width: 22%;
+	}
+	.cyc {
+		padding: 22px 9px;
+	}
+	a.continue {
+		width: 43%;
+		padding: 8px 1.5em;
+		font-size: 0.9em;
+	}
+	.cart-total {
+		padding-top: 9px;
+	}
+	h4.last-price,span.final {
+		font-size: 1em;
+	}
+	a.order,.price-details span{
+		font-size:0.9em;
+	}
+	.viw {
+		padding: 1.5em 2.3em;
+		left: 36%;
+		top: 29%;
+	}
+	.contact form input[type="text"].user,.contact form input[type="submit"] {
+		width: 100%;
+		margin-bottom: 1.2em;
+	}
+	.contact form input[type="text"], .contact textarea{
+		width: 100%;
+		margin-right:0;
+		margin-bottom: 1.2em;
+	}
+	.contact form input[type="submit"] {
+		margin:0;
+	}
+	.fast-viw {
+		font-size: 0.6em;
+		top: 16%;
+		left: 3%;
+	}
 }
 @media(max-width: 320px){
-.none3{
-	display:none;	
-}
-.logo {
-  width: 36%;
-}
-label.mobile_menu {
-  padding: 5px 0;
-}
-.top-nav {
-  top: 32px;
-  width:48%;
-}
-label.mobile_menu:after{
-	top:1px;
-}
-.caption h1{
-	font-size:1.3em;
-}
-.caption p{
-	font-size:0.8em;
-}
-.callbacks_nav {
-  height: 28px;
-  width: 25px;
-  background-size: 51px;
-}
-.banner-bg1 {
-  min-height: 275px;
-}
-a.morebtn {
-  padding: 0.9em 2em;
-  font-size: 0.6em;
-}
-.dwn {
-  bottom: 8%;
-  left: 47%;
-}
-.dwn img {
-  width: 39%;
-}
-.categories h3, .bikes h3, .contact h3 {
-  font-size: 1.1em;
-}
-.grid3{
-	display:none;
-}
-.cate-grid {
-  width: 44%;
-  margin: 0px 7px;
-}
-.categories{
-	padding:2em 0 0 0;
-}
-.bikes-grids {
-  margin-top: 2.5em;
-}
-.contact h3{
-	margin-bottom:0.3em;
-}
-.contact p {
-  font-size: 0.75em;
-}
-.contact textarea {
-  height: 100px;
-}
-.contact {
-  min-height: 400px;
-}
-.wrap {
-    width: 262px;
-}
-.ftr-menu ul li a {
-  font-size: 0.7em;
-  padding: 0 0.5em;
-}
-.logo2 img{
-	background-size:100%;
-	width:40%;
-	margin:0 auto; 
-}
-a.shop img{
-	width:12%;
-}
-.none2{
-	display:none;
-}
-.bike {
-  width: 44%;
-  margin: 0 3%;
-}
-.bike-cost {
-  padding: 10px 0em;
-}
-.product-img {
-  margin-right: 0%;
-  width: 100%;
-}
-.product-desc,.prod1-desc{
-  width: 100%;
-}
-.prod1-desc{
-	margin-bottom:0.5em;
-	border-right:0;
-}
-.product_price {
-  width: 100%;
-  padding:0;
-  text-align: center;
-}
-a.button1{
-	margin:0 auto;
-	width:50%;
-}
-.product{
-	margin-bottom:1em;
-}
-p.desc {
-  overflow: hidden;
-  height: 80px;
-  line-height: 1.5em;
-  font-size: 0.8em;
-}
-.details-left-info a,.bike-type p{
-	font-size: 11px;
-}
-.part-sec {
-  width: 46%;
-}
-.part-sec img {
-  height: 130px;
-  padding: 4px;
-}
-a.qck {
-  font-size: 0.8em;
-}
-.part-sec a h5 {
-  font-size:0.85em;
-}
-a.add-cart {
-  left: 20%;
-  font-size: 0.8em;
-  top: 25%;
-}
-.cart-item,.cart-item-info{
-	width:100%;
-}
-.cart-item-info h4 {
-  margin-right: 2em;
-}
-.delivery p{
-  font-size: 0.7em;
-  float: none;
-  text-align: center;
-}
-.delivery span {
-  margin-left: 3.2em;
-  float: none;
-}
-.cart-total{
-	padding:0;
-}
-a.continue {
-  width: 75%;
-  padding: 8px 1.5em;
-  font-size: 0.85em;
-  margin: 0px auto 2em auto;
-}
-.cart-item-info h3 {
-  margin-top: 1em;
-}
-a.order{
-  font-size: 0.85em;
-  margin: 2em auto 0 auto;
-  width: 68%;
-    padding: 7px 1.5em;
-}
-.banner-sec {
-  min-height: 104px;
-}
-.none2{
-	display:none;
-}
+	.none3{
+		display:none;
+	}
+	.logo {
+		width: 36%;
+	}
+	label.mobile_menu {
+		padding: 5px 0;
+	}
+	.top-nav {
+		top: 32px;
+		width:48%;
+	}
+	label.mobile_menu:after{
+		top:1px;
+	}
+	.caption h1{
+		font-size:1.3em;
+	}
+	.caption p{
+		font-size:0.8em;
+	}
+	.callbacks_nav {
+		height: 28px;
+		width: 25px;
+		background-size: 51px;
+	}
+	.banner-bg1 {
+		min-height: 275px;
+	}
+	a.morebtn {
+		padding: 0.9em 2em;
+		font-size: 0.6em;
+	}
+	.dwn {
+		bottom: 8%;
+		left: 47%;
+	}
+	.dwn img {
+		width: 39%;
+	}
+	.categories h3, .bikes h3, .contact h3 {
+		font-size: 1.1em;
+	}
+	.grid3{
+		display:none;
+	}
+	.cate-grid {
+		width: 44%;
+		margin: 0px 7px;
+	}
+	.categories{
+		padding:2em 0 0 0;
+	}
+	.bikes-grids {
+		margin-top: 2.5em;
+	}
+	.contact h3{
+		margin-bottom:0.3em;
+	}
+	.contact p {
+		font-size: 0.75em;
+	}
+	.contact textarea {
+		height: 100px;
+	}
+	.contact {
+		min-height: 400px;
+	}
+	.wrap {
+		width: 262px;
+	}
+	.ftr-menu ul li a {
+		font-size: 0.7em;
+		padding: 0 0.5em;
+	}
+	.logo2 img{
+		background-size:100%;
+		width:40%;
+		margin:0 auto;
+	}
+	a.shop img{
+		width:12%;
+	}
+	.none2{
+		display:none;
+	}
+	.bike {
+		width: 44%;
+		margin: 0 3%;
+	}
+	.bike-cost {
+		padding: 10px 0em;
+	}
+	.product-img {
+		margin-right: 0%;
+		width: 100%;
+	}
+	.product-desc,.prod1-desc{
+		width: 100%;
+	}
+	.prod1-desc{
+		margin-bottom:0.5em;
+		border-right:0;
+	}
+	.product_price {
+		width: 100%;
+		padding:0;
+		text-align: center;
+	}
+	a.button1{
+		margin:0 auto;
+		width:50%;
+	}
+	.product{
+		margin-bottom:1em;
+	}
+	p.desc {
+		overflow: hidden;
+		height: 80px;
+		line-height: 1.5em;
+		font-size: 0.8em;
+	}
+	.details-left-info a,.bike-type p{
+		font-size: 11px;
+	}
+	.part-sec {
+		width: 46%;
+	}
+	.part-sec img {
+		height: 130px;
+		padding: 4px;
+	}
+	a.qck {
+		font-size: 0.8em;
+	}
+	.part-sec a h5 {
+		font-size:0.85em;
+	}
+	a.add-cart {
+		left: 20%;
+		font-size: 0.8em;
+		top: 25%;
+	}
+	.cart-item,.cart-item-info{
+		width:100%;
+	}
+	.cart-item-info h4 {
+		margin-right: 2em;
+	}
+	.delivery p{
+		font-size: 0.7em;
+		float: none;
+		text-align: center;
+	}
+	.delivery span {
+		margin-left: 3.2em;
+		float: none;
+	}
+	.cart-total{
+		padding:0;
+	}
+	a.continue {
+		width: 75%;
+		padding: 8px 1.5em;
+		font-size: 0.85em;
+		margin: 0px auto 2em auto;
+	}
+	.cart-item-info h3 {
+		margin-top: 1em;
+	}
+	a.order{
+		font-size: 0.85em;
+		margin: 2em auto 0 auto;
+		width: 68%;
+		padding: 7px 1.5em;
+	}
+	.banner-sec {
+		min-height: 104px;
+	}
+	.none2{
+		display:none;
+	}
 }
