@@ -53,19 +53,27 @@
 			</div>
 		</div>
 
-		<div style="  max-width: 300px;  background-color: rgba(0, 0, 0, 0.6);  padding: 19px;  border-radius: 11px;">
-			<p th:if="${param.logout}" class="alert">You have been logged out</p>
-			<p th:if="${param.error}" class="alert alert-error">There was an error, please try again</p>
-			<form name="form" th:action="@{/login}" action="/login" method="POST">
-				<fieldset>
-					<input type="text" name="username" value="" placeholder="Username" class="morebtn" />
-					<input type="password" name="password" placeholder="Password" class="morebtn-psw" />
-				</fieldset>
-				<input type="submit" id="login" value="Login"
-					   class="btn btn-primary" />
-			</form> </div>
+
+
 
 	</div>
+
+	<div class="container wrap" style=" position: absolute;
+    bottom: 5px;">
+		<p th:if="${param.logout}" class="alert">You have been logged out</p>
+		<p th:if="${param.error}" class="alert alert-error">There was an error, please try again</p>
+		<form name="form" th:action="@{/login}" action="/login" method="POST">
+			<fieldset>
+				<table><tr><td class=''>
+					<input type="text" name="username" value="" placeholder="Username" class="cutom-form" /></td><td>
+					<input type="password" name="password" placeholder="Password" class="morebtn-psw" /></td><td><input type="submit" id="login" value="Login"
+																														class="btn btn-primary" style=" margin-top: -25px;
+   padding: 10px;
+  margin-left: 28px;" /> </td></tr>
+				</table>
+			</fieldset>
+
+		</form> </div>
 
 </div>
 </body>

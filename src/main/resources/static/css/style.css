@@ -452,6 +452,26 @@ form input[type="text"], .contact textarea {
 	-o-transition: 0.5s all ease;
 	-ms-transition: 0.5s all ease;
 }
+
+form input[type="password"], .contact textarea {
+	width: 100%;
+	margin-right: 4%;
+	padding: 10px;
+	border: 1px solid #b7b7b7;
+	font-size: 1em;
+	margin-bottom: 2em;
+	font-style:italic;
+	color: #000;
+	background: #fff;
+	outline: none;
+	font-weight: 400;
+	border-radius:7px;
+	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
+}
 .frontend-label{
 	color:#fff;
 	float: left;
@@ -487,7 +507,7 @@ form input[type="text"], .contact textarea {
 }
 /*--footer--*/
 .footer{
-	background:#fcff19;
+	background:#936545;
 	padding:1.5em;
 }
 .logo2{
@@ -2313,4 +2333,26 @@ label{
 	.none2{
 		display:none;
 	}
+
+
+}
+
+.cutom-form {
+	width: 100%;
+	margin-right: 4%;
+	padding: 10px;
+	border: 1px solid #b7b7b7;
+	font-size: 1em;
+	margin-bottom: 2em;
+	font-style:italic;
+	color: #000;
+	background: #fff;
+	outline: none;
+	font-weight: 400;
+	border-radius:7px;
+	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	-ms-transition: 0.5s all ease;
 }
