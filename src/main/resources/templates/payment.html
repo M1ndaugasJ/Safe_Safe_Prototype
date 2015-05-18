@@ -32,25 +32,22 @@
 					</ul>
 				</div>
 				<div class="bike-apparels">
-					<form action="upload" th:action="@{/addFileLoggedOn}" method="post" enctype="multipart/form-data">
-						<input type="file" name="myFile"/>
-						<div>
-							<label> Email : <input type="text" name="email"/> </label>
-							<input type="submit" value="Send" />
-							<label th:text="${name}"></label>
-						</div>
-					</form>
-					<table>
-						<tr>
-							<th style="padding-left: 200px;">NAME</th>
-							<th style="padding-left: 175px;">DATE</th>
-						</tr>
-						<tr th:each="filex : ${files}">
-							<td style="padding-left: 200px;" th:text="${filex.name}"></td>
-							<td style="padding-left: 175px;" th:text="${filex.createDate}"></td>
-						</tr>
-					</table>
-				</div>
+				Current status: free user<br /><br />
+					Get premium!<br />
+					<ul>
+						<li>Telephone protected system</li>
+						<li>Share file with friends</li>
+						<li>Extended file holding time</li>
+						<li>... and more!</li>
+					</ul><br /><br />
+					<h3>Prices:</h3><br />
+					<ul><li>
+						1 month - 3&#8364;
+					</li>
+					<li>6 month - 15&#8364;</li>
+					<li>1 year - 25&#8364;</li></ul>
+				</div><br />
+				<button class="morebtn"> GET PREMIUM</button>
 			</div>
 
 			<div class="rsidebar span_1_of_left">
@@ -58,8 +55,9 @@
 					<div class="product_right">
 						<h3 class="m_2">Menu</h3>
 							<li><a th:href="@{/}" href="home.html"> Home </a></li>
-							<li><a th:href="@{/payment}" href="payment"> Premium </a></li>
-							<li><a th:href="@{/logout}" href="logout"> Logout </a></li>
+							<li><a th:href="@{/payment}" href="logout"> Premium </a></li>
+
+						<li><a th:href="@{/logout}" href="logout"> Logout </a></li>
 					</div>
 					</section>
 
