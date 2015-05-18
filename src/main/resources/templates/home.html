@@ -28,10 +28,10 @@
 			<div class="bike-parts acces">
 				<div class="top">
 					<ul>
-						Page
+						Main menu
 					</ul>
 				</div>
-				<div class="bike-apparels">
+				<div class="bike-apparels" style="padding-top: 50px">
 					<form action="upload" th:action="@{/addFileLoggedOn}" method="post" enctype="multipart/form-data">
 						<input type="file" name="myFile"/>
 						<div>
@@ -40,13 +40,13 @@
 							<label th:text="${name}"></label>
 						</div>
 					</form>
-					<table>
+					<table class="table table-condensed">
 						<tr>
-							<th style="padding-left: 200px;">NAME</th>
+							<th>NAME</th>
 							<th style="padding-left: 175px;">DATE</th>
 						</tr>
 						<tr th:each="filex : ${files}">
-							<td style="padding-left: 200px;" th:text="${filex.name}"></td>
+							<td th:text="${filex.name}"></td>
 							<td style="padding-left: 175px;" th:text="${filex.createDate}"></td>
 						</tr>
 					</table>
