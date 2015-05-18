@@ -19,8 +19,8 @@
 			</div>
 			<div class="container wrap" style=" position: absolute;
     float:right; right: 0;">
-				<p th:if="${param.logout}" class="alert">You have been logged out</p>
-				<p th:if="${param.error}" class="alert alert-error">There was an error, please try again</p>
+				<p th:if="${param.logout}" class="alert custom-alert">You have been logged out</p>
+				<p th:if="${param.error}" class="alert alert-error custom-alert">There was an error, please try again</p>
 				<form name="form" th:action="@{/login}" action="/login" method="POST">
 					<fieldset>
 						<table><tr><td class=''>
@@ -40,13 +40,13 @@
 		<div class="slider">
 			<div class="callbacks_container">
 				<div class="container">
+					<label th:text="${name}" class="error-label-custom" style="  background-color: #fcff19;  max-width: 300px;  margin-right: auto;  margin-left: auto;  margin-top: 10px;  border-radius: 7px;"></label>
 
 					<form action="upload" th:action="@{/addFile}" method="post" enctype="multipart/form-data">
-						<input type="file" name="myFile" class="morebtn-file"/>
+						<input type="file" name="myFile" class="morebtn-file" style="min-width: 300px; margin-bottom: 10px;"/>
 						<div>
-							<label><div class="frontend-label"> Email : </div><input type="text" name="email"/> </label>
+							<label style="  max-width: 300px;  right: 0;  margin-right: auto;  margin-left: auto;"><div class="frontend-label"> Email : </div><input type="text" name="email" class="custom-input-form"/> </label>
 							<input type="submit" value="Send" class="morebtn" />
-							<label th:text="${name}"></label>
 						</div>
 					</form>
 				</div>

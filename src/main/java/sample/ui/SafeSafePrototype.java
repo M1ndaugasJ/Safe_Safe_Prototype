@@ -54,6 +54,7 @@ public class SafeSafePrototype extends WebMvcConfigurerAdapter {
 	@Override
 	public void addViewControllers(ViewControllerRegistry registry) {
 		registry.addViewController("/login").setViewName("login");
+		registry.addViewController("/payment").setViewName("payment");
 		registry.addViewController("/access").setViewName("access");
         registry.addViewController("/home").setViewName("home");
         registry.addViewController("/").setViewName("home");

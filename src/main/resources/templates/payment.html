@@ -32,14 +32,8 @@
 					</ul>
 				</div>
 				<div class="bike-apparels">
-					<form action="upload" th:action="@{/addFileLoggedOn}" method="post" enctype="multipart/form-data">
-						<input type="file" name="myFile"/>
-						<div>
-							<label> Email : <input type="text" name="email"/> </label>
-							<input type="submit" value="Send" />
-							<label th:text="${name}"></label>
-						</div>
-					</form>
+
+
 
 				</div>
 			</div>
@@ -49,8 +43,9 @@
 					<div class="product_right">
 						<h3 class="m_2">Menu</h3>
 							<li><a th:href="@{/}" href="home.html"> Home </a></li>
-							<li><a th:href="@{/payment}" href="payment"> Premium </a></li>
-							<li><a th:href="@{/logout}" href="logout"> Logout </a></li>
+							<li><a th:href="@{/payment}" href="logout"> Premium </a></li>
+
+						<li><a th:href="@{/logout}" href="logout"> Logout </a></li>
 					</div>
 					</section>
 
