@@ -1,16 +1,22 @@
 package sample.ui.Model;
 
-import sample.ui.Model.User;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-import javax.persistence.Table;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
- * Created by Mindaugo on 2015-05-17.
+ * Created by Mindaugas on 2015-05-18.
  */
-@Repository
-@Table(name = "users")
-public interface UserRepository extends JpaRepository<User, Long> {
+@Transactional
+@javax.transaction.Transactional
+public interface UserRepository extends CrudRepository<User, Long> {
+
+    /**
+     * This method is not implemented and its working code will be
+     * automagically generated from its signature by Spring Data JPA.
+     *
+     * @param email the user email.
+     * @return the user having the passed email or null if no user is found.
+     */
     public User findByEmail(String email);
-}
+
+} // class UserRepository
