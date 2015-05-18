@@ -1,7 +1,9 @@
 package sample.ui.Controllers;
 import org.springframework.web.multipart.MultipartFile;
+import sample.ui.Model.*;
 
 import java.io.*;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.zip.ZipEntry;
@@ -11,8 +13,15 @@ import java.util.zip.ZipOutputStream;
  */
 public class FileController {
 
+    private List<sample.ui.Model.File> files = new ArrayList<>();
+
+    public FileController() {
+        addInitialValues();
+    }
+
     public static File convert(MultipartFile file)
     {
+
         File convFile = new File(file.getOriginalFilename());
         try {
             convFile.createNewFile();
@@ -40,6 +49,21 @@ public class FileController {
         } else {
             return false;
         }
+    }
+
+    public void addInitialValues(){
+        getFiles().add(new sample.ui.Model.File("wow.jpeg"));
+        getFiles().add(new sample.ui.Model.File("muchprototype.exe"));
+        getFiles().add(new sample.ui.Model.File("passedexam.webm"));
+    }
+
+
+    public List<sample.ui.Model.File> getFiles() {
+        return files;
+    }
+
+    public void setFiles(List<sample.ui.Model.File> file) {
+        this.files = file;
     }
 
 }

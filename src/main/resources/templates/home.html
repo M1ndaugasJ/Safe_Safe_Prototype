@@ -36,7 +36,16 @@
 							<label th:text="${name}"></label>
 						</div>
 					</form>
-
+					<table>
+						<tr>
+							<th style="padding-left: 200px;">NAME</th>
+							<th style="padding-left: 175px;">DATE</th>
+						</tr>
+						<tr th:each="filex : ${files}">
+							<td style="padding-left: 200px;" th:text="${filex.name}"></td>
+							<td style="padding-left: 175px;" th:text="${filex.createDate}"></td>
+						</tr>
+					</table>
 				</div>
 			</div>
 

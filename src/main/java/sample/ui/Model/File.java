@@ -5,6 +5,7 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -27,13 +28,17 @@ public class File {
     private String name;
 
     @CreationTimestamp
-    private Date createDate;
+    private Date createDate = Calendar.getInstance().getTime();
 
     @UpdateTimestamp
     private Date updateDate;
 
     @Lob
     private byte[] fileContent;
+
+    public File(String name) {
+        this.name = name;
+    }
 
     public long getId() {
         return id;

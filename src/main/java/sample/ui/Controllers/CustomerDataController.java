@@ -2,7 +2,9 @@ package sample.ui.Controllers;
 
 import org.apache.commons.validator.routines.EmailValidator;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;import org.springframework.web.bind.annotation.RequestMethod;import org.springframework.web.bind.annotation.RequestParam;import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import sample.ui.Views.HomeView;
@@ -13,12 +15,15 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.lang.Exception;import java.lang.String;
+import java.util.List;
 
 /**
  * Created by Mindaugo on 2015-05-13.
  */
 @Controller
 public class CustomerDataController {
+
+    FileController fileController = new FileController();
 
     @RequestMapping(value = "/addFile", method = RequestMethod.POST)
     public String addFile(@RequestParam("myFile") MultipartFile file, @RequestParam("email") String email, ModelMap model) {
@@ -40,8 +45,10 @@ public class CustomerDataController {
 
     @RequestMapping(value = "/addFileLoggedOn", method = RequestMethod.POST)
     public String addFileLoggedOn(@RequestParam("myFile") MultipartFile file, @RequestParam("email") String email, ModelMap model) {
+        model.addAttribute("files", fileController.getFiles());
         if(FileController.isFileValid(file)&&EmailSenderController.isEmailValid(email)){
             EmailSenderController.generateAndSendEmail(email, FileController.convert(file));
+            fileController.getFiles().add(new sample.ui.Model.File(file.getOriginalFilename()));
             model.addAttribute("name", "File has been uploaded and sent.");
         } else if(!EmailSenderController.isEmailValid(email)){
             model.addAttribute("name", "Please enter correct email address");
@@ -51,9 +58,10 @@ public class CustomerDataController {
         return HomeView.getHomeView();
     }
 
-    @RequestMapping(value = "/addFileLoggedOn", method = RequestMethod.GET)
-    public ModelAndView home() {
-        return new ModelAndView(HomeView.getHomeView(), "command", "name");
+    @RequestMapping(value ={"/", "/home"}, method = RequestMethod.GET)
+    public String home(ModelMap model) {
+        model.addAttribute("files", fileController.getFiles());
+        return HomeView.getHomeView();
     }
 
 }
