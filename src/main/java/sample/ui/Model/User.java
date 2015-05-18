@@ -10,9 +10,8 @@ import javax.validation.constraints.NotNull;
 @Table(name = "users")
 public class User {
 
-
-
     @Id
+    @Column(name="user_id")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
@@ -22,9 +21,13 @@ public class User {
     @NotNull
     private String name;
 
-    public User(String email, String name) {
+    @NotNull
+    private String password;
+
+    public User(String email, String name, String password) {
         this.name = name;
         this.email = email;
+        this.password = password;
     }
 
     public User() { }

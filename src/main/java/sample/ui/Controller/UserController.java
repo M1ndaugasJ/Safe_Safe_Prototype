@@ -1,28 +1,37 @@
-package sample.ui.Facade;
+package sample.ui.Controller;
 
-import sample.ui.Model.User;
+import org.springframework.stereotype.Controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import sample.ui.Model.User;
+import sample.ui.Model.UserDao;
+import sample.ui.Model.UserRepository;
 
 /**
  * Created by Mindaugas on 2015-05-16.
  */
-public class UserFacadeImplementation {
+@Controller
+public class UserController {
 
     @Autowired
-    private UserFacade userDao;
+    private UserRepository userRepository;
+
+    @Autowired
+    private UserDao userDao;
 
     @RequestMapping("/create")
     @ResponseBody
-    public String create(String email, String name) {
+    public String create(String email, String name, String password) {
         try {
-            User user = new User(email, name);
+            User user = new User(email, name, password);
             userDao.save(user);
         }
         catch (Exception ex) {
+            System.out.println("Error creating the user:");
             return "Error creating the user: " + ex.toString();
         }
+        System.out.println("User succesfully created!");
         return "User succesfully created!";
     }
 

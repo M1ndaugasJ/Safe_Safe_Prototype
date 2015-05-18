@@ -10,6 +10,7 @@ import javax.persistence.Table;
  * Created by Mindaugo on 2015-05-17.
  */
 @Repository
-@Table(name = "Users")
-public interface UserRepository extends JpaRepository<User, String> {
+@Table(name = "users")
+public interface UserRepository extends JpaRepository<User, Long> {
+    public User findByEmail(String email);
 }

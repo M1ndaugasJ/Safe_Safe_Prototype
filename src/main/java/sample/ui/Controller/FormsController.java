@@ -1,4 +1,4 @@
-package sample.ui.Controllers;
+package sample.ui.Controller;
 
 /**
  * Created by Edvinas on 2015-05-17.
