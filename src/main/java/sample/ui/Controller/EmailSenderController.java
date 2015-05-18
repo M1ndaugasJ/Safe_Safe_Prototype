@@ -1,10 +1,7 @@
-package sample.ui.method;
+package sample.ui.Controller;
 
-import javax.activation.DataHandler;
 import javax.mail.*;
 import javax.mail.internet.*;
-import javax.mail.util.ByteArrayDataSource;
-import javax.sql.DataSource;
 import java.io.File;
 import java.io.IOException;
 import java.util.Properties;

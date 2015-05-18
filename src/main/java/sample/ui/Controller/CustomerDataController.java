@@ -1,11 +1,10 @@
-package sample.ui.method;
+package sample.ui.Controller;
 
 import org.apache.commons.validator.routines.EmailValidator;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;import org.springframework.web.bind.annotation.RequestMethod;import org.springframework.web.bind.annotation.RequestParam;import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
-import sample.ui.Controller.UserController;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -28,6 +27,10 @@ public class CustomerDataController {
         if(isFileValid(file)&&isEmailValid(email)){
             EmailSenderController.generateAndSendEmail(getEmail(), convert(file));
             model.addAttribute("name", "File has been uploaded and sent.");
+        } else if(!isEmailValid(email)){
+            model.addAttribute("name", "Please enter correct email address");
+        } else if (!isFileValid(file)){
+            model.addAttribute("name", "Please select another file");
         }
         return "login";
     }
@@ -42,6 +45,10 @@ public class CustomerDataController {
         if(isFileValid(file)&&isEmailValid(email)){
             EmailSenderController.generateAndSendEmail(getEmail(), convert(file));
             model.addAttribute("name", "File has been uploaded and sent.");
+        } else if(!isEmailValid(email)){
+            model.addAttribute("name", "Please enter correct email address");
+        } else if (!isFileValid(file)){
+            model.addAttribute("name", "Please select another file");
         }
         return "home";
     }
