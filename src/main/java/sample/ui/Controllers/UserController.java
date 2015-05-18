@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import sample.ui.Model.File;
 import sample.ui.Model.User;
 import sample.ui.Model.UserRepository;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
@@ -112,16 +113,15 @@ public class UserController {
         try {
             User userObj = userRepository.findOne(user);
             User toObj = userRepository.findOne(to);
-            userObj.setUser(toObj);
         }
         catch (Exception ex) {
             throw new Exception("User not found");
         }
     }
 
-    public List<Tuple> getUserFileList(User user){
-       CriteriaBuilder a;
-        return user.getFileList();
+    public List<File> getUserFileList(User user){
+       CriteriaBuilder criteriaBuilder;
+        return getUser(user.getId()).getFiles();
     }
 
     public int getUserStatus(User user){
