@@ -3,9 +3,7 @@ package sample.ui.Model;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.transaction.annotation.Transactional;
 
-/**
- * Created by Mindaugas on 2015-05-18.
- */
+
 @Transactional
 @javax.transaction.Transactional
 public interface UserRepository extends CrudRepository<User, Long> {

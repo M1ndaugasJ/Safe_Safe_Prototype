@@ -1,15 +1,19 @@
 package sample.ui.Controllers;
 
+import org.hibernate.criterion.CriteriaQuery;
 import org.springframework.stereotype.Controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import sample.ui.Model.User;
 import sample.ui.Model.UserRepository;
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
-/**
- * Created by Mindaugas on 2015-05-16.
- */
+import javax.persistence.Tuple;
+import javax.persistence.criteria.CriteriaBuilder;
+import java.util.List;
+
+
 @Controller
 public class UserController {
 
@@ -94,4 +98,33 @@ public class UserController {
         return "User succesfully updated!";
     }
 
+    public User getUser(long id){
+        try {
+            User user = userRepository.findOne(id);
+            return user;
+        }
+        catch (Exception ex) {
+            return null;
+        }
+
+    }
+    public void addUserToReceipientList(long user, long to) throws Exception {
+        try {
+            User userObj = userRepository.findOne(user);
+            User toObj = userRepository.findOne(to);
+            userObj.setUser(toObj);
+        }
+        catch (Exception ex) {
+            throw new Exception("User not found");
+        }
+    }
+
+    public List<Tuple> getUserFileList(User user){
+       CriteriaBuilder a;
+        return user.getFileList();
+    }
+
+    public int getUserStatus(User user){
+        return user.getUserStatus();
+    }
 }

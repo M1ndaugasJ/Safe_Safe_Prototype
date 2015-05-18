@@ -8,9 +8,7 @@ import javax.validation.constraints.NotNull;
 import java.util.Calendar;
 import java.util.Date;
 
-/**
- * Created by Mindaugas on 2015-05-16.
- */
+
 @Entity
 @Table(name = "Files")
 public class File {

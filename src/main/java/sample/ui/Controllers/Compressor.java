@@ -7,22 +7,21 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
+import java.util.zip.ZipInputStream;
 
-/**
- * Created by Edvinas on 2015-05-18.
- */
+
 public class Compressor
 {
     List<String> fileList;
     public static String OUTPUT_ZIP_FILE ;
     public static String SOURCE_FOLDER ;
+    public static final String OUTPUT_FOLDER = "/home/etc/temp/files";
 
     Compressor(File file){
         fileList = new ArrayList<String>();
         this.generateFileList(file);
         this.zipIt(OUTPUT_ZIP_FILE);
     }
-
 
     public void zipIt(String zipFile){
 
@@ -61,6 +60,52 @@ public class Compressor
         }
     }
 
+    public void unZipIt(String zipFile){
+
+        byte[] buffer = new byte[1024];
+
+        try{
+
+            //create output directory is not exists
+            File folder = new File(OUTPUT_FOLDER);
+            if(!folder.exists()){
+                folder.mkdir();
+            }
+
+            ZipInputStream zis =
+                    new ZipInputStream(new FileInputStream(zipFile));
+            ZipEntry ze = zis.getNextEntry();
+
+            while(ze!=null){
+
+                String fileName = ze.getName();
+                File newFile = new File(OUTPUT_FOLDER + File.separator + fileName);
+
+                System.out.println("file unzip : "+ newFile.getAbsoluteFile());
+
+
+                new File(newFile.getParent()).mkdirs();
+
+                FileOutputStream fos = new FileOutputStream(newFile);
+
+                int len;
+                while ((len = zis.read(buffer)) > 0) {
+                    fos.write(buffer, 0, len);
+                }
+
+                fos.close();
+                ze = zis.getNextEntry();
+            }
+
+            zis.closeEntry();
+            zis.close();
+
+            System.out.println("Done");
+
+        }catch(IOException ex){
+            ex.printStackTrace();
+        }
+    }
 
     public void generateFileList(File node){
 

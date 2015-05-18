@@ -2,10 +2,9 @@ package sample.ui.Model;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.List;
 
-/**
- * Created by Mindaugas on 2015-05-16.
- */
+
 @Entity
 @Table(name = "users")
 public class User {
@@ -14,10 +13,12 @@ public class User {
     @Column(name="user_id")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-
+    private int status;
     @NotNull
     private String email;
 
+    private User friend;
+    private List<Tuple> files;
     @NotNull
     private String name;
 
@@ -44,6 +45,8 @@ public class User {
         this.id = id;
     }
 
+    public void setUser(User id){this.friend = id;}
+
     public String getName() {
         return name;
     }
@@ -51,6 +54,10 @@ public class User {
     public void setName(String name) {
         this.name = name;
     }
+
+    public int getUserStatus() {return this.status;}
+
+    public List<Tuple>  getFileList(){ return this.files;}
 
     public String getEmail() {
         return email;

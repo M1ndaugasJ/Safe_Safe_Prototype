@@ -10,9 +10,7 @@ import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- * Created by Mindaugas on 2015-05-16.
- */
+
 public class EmailSenderController {
 
     private static final Logger logger = Logger.getLogger(EmailSenderController.class.getName());

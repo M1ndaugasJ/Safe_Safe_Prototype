@@ -3,9 +3,6 @@ package sample.ui.Model;
 import java.util.Date;
 import java.util.List;
 
-/**
- * Created by Edvinas on 2015-05-17.
- */
 public class Message {
     public String Text;
     public List<String> ReceipientList;

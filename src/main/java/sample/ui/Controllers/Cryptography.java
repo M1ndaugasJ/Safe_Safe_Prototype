@@ -15,12 +15,10 @@ import javax.crypto.spec.SecretKeySpec;
 import org.apache.tomcat.util.http.fileupload.IOUtils;
 import org.springframework.core.io.ClassPathResource;
 
-/**
- * Created by Edvinas on 2015-05-18.
- */
+
 public class Cryptography {
     private static SecretKeySpec skeySpec;
-    private String algorythm;
+    private String algorithm;
     public FileInputStream input;
     Cryptography(FileInputStream File) {
         try {
@@ -40,8 +38,8 @@ public class Cryptography {
         }
     }
 
-    public void setAlgorythm(String algorythm){
-        this.algorythm = algorythm;
+    public void setAlgorithm(String algorythm){
+        this.algorithm = algorithm;
     }
 
     public byte[] encryptFile() throws GeneralSecurityException, NoSuchPaddingException, IOException {

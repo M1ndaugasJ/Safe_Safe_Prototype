@@ -3,9 +3,7 @@ package sample.ui.Model;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
-/**
- * Created by Mindaugas on 2015-05-18.
- */
+
 @Entity
 @Table(name = "Errors")
 public class Error {
