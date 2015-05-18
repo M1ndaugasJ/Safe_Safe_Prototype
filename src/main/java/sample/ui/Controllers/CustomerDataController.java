@@ -20,10 +20,6 @@ import java.lang.Exception;import java.lang.String;
 @Controller
 public class CustomerDataController {
 
-    //@ResponseBody ??
-    private byte[] multipartFile;
-    private String email;
-
     @RequestMapping(value = "/addFile", method = RequestMethod.POST)
     public String addFile(@RequestParam("myFile") MultipartFile file, @RequestParam("email") String email, ModelMap model) {
         if(FileController.isFileValid(file)&&EmailSenderController.isEmailValid(email)){
