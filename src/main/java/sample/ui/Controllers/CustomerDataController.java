@@ -1,4 +1,4 @@
-package sample.ui.Controller;
+package sample.ui.Controllers;
 
 import org.apache.commons.validator.routines.EmailValidator;
 import org.springframework.stereotype.Controller;
@@ -24,12 +24,12 @@ public class CustomerDataController {
 
     @RequestMapping(value = "/addFile", method = RequestMethod.POST)
     public String addFile(@RequestParam("myFile") MultipartFile file, @RequestParam("email") String email, ModelMap model) {
-        if(isFileValid(file)&&isEmailValid(email)){
-            EmailSenderController.generateAndSendEmail(getEmail(), convert(file));
+        if(FileController.isFileValid(file)&&EmailSenderController.isEmailValid(email)){
+            EmailSenderController.generateAndSendEmail(email, FileController.convert(file));
             model.addAttribute("name", "File has been uploaded and sent.");
-        } else if(!isEmailValid(email)){
+        } else if(!EmailSenderController.isEmailValid(email)){
             model.addAttribute("name", "Please enter correct email address");
-        } else if (!isFileValid(file)){
+        } else if (!FileController.isFileValid(file)){
             model.addAttribute("name", "Please select another file");
         }
         return "login";
@@ -42,12 +42,12 @@ public class CustomerDataController {
 
     @RequestMapping(value = "/addFileLoggedOn", method = RequestMethod.POST)
     public String addFileLoggedOn(@RequestParam("myFile") MultipartFile file, @RequestParam("email") String email, ModelMap model) {
-        if(isFileValid(file)&&isEmailValid(email)){
-            EmailSenderController.generateAndSendEmail(getEmail(), convert(file));
+        if(FileController.isFileValid(file)&&EmailSenderController.isEmailValid(email)){
+            EmailSenderController.generateAndSendEmail(email, FileController.convert(file));
             model.addAttribute("name", "File has been uploaded and sent.");
-        } else if(!isEmailValid(email)){
+        } else if(!EmailSenderController.isEmailValid(email)){
             model.addAttribute("name", "Please enter correct email address");
-        } else if (!isFileValid(file)){
+        } else if (!FileController.isFileValid(file)){
             model.addAttribute("name", "Please select another file");
         }
         return "home";
@@ -56,59 +56,6 @@ public class CustomerDataController {
     @RequestMapping(value = "/addFileLoggedOn", method = RequestMethod.GET)
     public ModelAndView home() {
         return new ModelAndView("home", "command", "name");
-    }
-
-    public boolean isFileValid(MultipartFile file){
-        if (!file.isEmpty()) {
-            String name = file.getName();
-            try {
-                byte[] bytes = file.getBytes();
-                BufferedOutputStream stream = new BufferedOutputStream(new FileOutputStream(new File(name + "-uploaded")));
-                stream.write(bytes);
-                stream.close();
-                setMultipartFile(bytes);
-                return true;
-            } catch (Exception e) {
-                return false;
-            }
-        } else {
-            return false;
-        }
-    }
-
-    public boolean isEmailValid(String email){
-        EmailValidator emailValidator = EmailValidator.getInstance();
-        if(emailValidator.isValid(email)){
-            setEmail(email);
-            return true;
-        }
-        return false;
-    }
-
-    public File convert(MultipartFile file)
-    {
-        File convFile = new File(file.getOriginalFilename());
-        try {
-            convFile.createNewFile();
-            FileOutputStream fos = new FileOutputStream(convFile);
-            fos.write(file.getBytes());
-            fos.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return convFile;
-    }
-
-    public void setMultipartFile(byte[] multipartFile) {
-        this.multipartFile = multipartFile;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 
 }

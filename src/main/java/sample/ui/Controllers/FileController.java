@@ -11,8 +11,7 @@ import java.util.zip.ZipOutputStream;
  */
 public class FileController {
 
-    private byte[] multipartFile;
-    public File convert(MultipartFile file)
+    public static File convert(MultipartFile file)
     {
         File convFile = new File(file.getOriginalFilename());
         try {
@@ -26,7 +25,7 @@ public class FileController {
         return convFile;
     }
 
-    public boolean isFileValid(MultipartFile file){
+    public static boolean isFileValid(MultipartFile file){
         if (!file.isEmpty()) {
             String name = file.getName();
             try {
@@ -34,7 +33,6 @@ public class FileController {
                 BufferedOutputStream stream = new BufferedOutputStream(new FileOutputStream(new File(name + "-uploaded")));
                 stream.write(bytes);
                 stream.close();
-                setMultipartFile(bytes);
                 return true;
             } catch (Exception e) {
                 return false;
@@ -44,7 +42,4 @@ public class FileController {
         }
     }
 
-    public void setMultipartFile(byte[] multipartFile) {
-        this.multipartFile = multipartFile;
-    }
 }

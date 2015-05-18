@@ -1,4 +1,6 @@
-package sample.ui.Controller;
+package sample.ui.Controllers;
+
+import org.apache.commons.validator.routines.EmailValidator;
 
 import javax.mail.*;
 import javax.mail.internet.*;
@@ -79,6 +81,14 @@ public class EmailSenderController {
             e.printStackTrace();
         }
 
+    }
+
+    public static boolean isEmailValid(String email){
+        EmailValidator emailValidator = EmailValidator.getInstance();
+        if(emailValidator.isValid(email)){
+            return true;
+        }
+        return false;
     }
 
 }
